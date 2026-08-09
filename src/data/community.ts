@@ -1,4 +1,10 @@
 import type { TrackId } from "./tracks";
+import ankitAvatar from "@/assets/avatars/ankit.png";
+import priyaAvatar from "@/assets/avatars/priya.png";
+import rohanAvatar from "@/assets/avatars/rohan.png";
+import snehaAvatar from "@/assets/avatars/sneha.png";
+import adityaAvatar from "@/assets/avatars/aditya.png";
+import fatimaAvatar from "@/assets/avatars/fatima.png";
 
 export type DemoStudent = {
   id: string;
@@ -12,10 +18,23 @@ export type DemoStudent = {
   longestStreak: number;
   xp: number;
   level: number;
+  /** Days the student skipped — shown in red on the calendar. */
+  missedDays: number[];
 };
 
-const av = (seed: string) =>
-  `https://api.dicebear.com/9.x/adventurer/svg?seed=${seed}&backgroundType=gradientLinear&backgroundColor=b6e3f4,c0aede,ffd5dc,d1d4f9`;
+/** Illustrated Indian student portraits for the named demo accounts. */
+const PORTRAITS: Record<string, string> = {
+  "Ankit Sharma": ankitAvatar,
+  "Priya Nair": priyaAvatar,
+  "Rohan Verma": rohanAvatar,
+  "Sneha Iyer": snehaAvatar,
+  "Aditya Rao": adityaAvatar,
+  "Fatima Khan": fatimaAvatar,
+};
+
+export const av = (seed: string) =>
+  PORTRAITS[seed] ??
+  `https://api.dicebear.com/9.x/notionists/svg?seed=${encodeURIComponent(seed)}&radius=18&backgroundType=gradientLinear&backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4`;
 
 export const DEMO_STUDENTS: DemoStudent[] = [
   {
@@ -24,12 +43,13 @@ export const DEMO_STUDENTS: DemoStudent[] = [
     email: "ankit@abtalks.in",
     college: "IIIT Bhopal",
     track: "frontend",
-    avatar: av("Ankit"),
+    avatar: av("Ankit Sharma"),
     currentDay: 18,
     streak: 12,
-    longestStreak: 17,
+    longestStreak: 12,
     xp: 4820,
     level: 4,
+    missedDays: [3, 5],
   },
   {
     id: "s2",
@@ -37,12 +57,13 @@ export const DEMO_STUDENTS: DemoStudent[] = [
     email: "priya@abtalks.in",
     college: "NIT Trichy",
     track: "aiml",
-    avatar: av("Priya"),
+    avatar: av("Priya Nair"),
     currentDay: 32,
     streak: 21,
-    longestStreak: 24,
+    longestStreak: 21,
     xp: 8140,
     level: 5,
+    missedDays: [4, 9, 10],
   },
   {
     id: "s3",
@@ -50,12 +71,13 @@ export const DEMO_STUDENTS: DemoStudent[] = [
     email: "rohan@abtalks.in",
     college: "VIT Vellore",
     track: "backend",
-    avatar: av("Rohan"),
+    avatar: av("Rohan Verma"),
     currentDay: 12,
     streak: 7,
-    longestStreak: 9,
+    longestStreak: 7,
     xp: 2960,
     level: 3,
+    missedDays: [2, 4],
   },
   {
     id: "s4",
@@ -63,12 +85,13 @@ export const DEMO_STUDENTS: DemoStudent[] = [
     email: "sneha@abtalks.in",
     college: "PES University",
     track: "cyber",
-    avatar: av("Sneha"),
+    avatar: av("Sneha Iyer"),
     currentDay: 45,
     streak: 30,
     longestStreak: 30,
     xp: 11250,
     level: 6,
+    missedDays: [8, 14],
   },
   {
     id: "s5",
@@ -76,12 +99,13 @@ export const DEMO_STUDENTS: DemoStudent[] = [
     email: "aditya@abtalks.in",
     college: "IIT Kharagpur",
     track: "dsa",
-    avatar: av("Aditya"),
+    avatar: av("Aditya Rao"),
     currentDay: 27,
     streak: 15,
-    longestStreak: 19,
+    longestStreak: 15,
     xp: 6410,
     level: 4,
+    missedDays: [5, 11],
   },
   {
     id: "s6",
@@ -89,12 +113,13 @@ export const DEMO_STUDENTS: DemoStudent[] = [
     email: "fatima@abtalks.in",
     college: "Jamia Millia Islamia",
     track: "frontend",
-    avatar: av("Fatima"),
+    avatar: av("Fatima Khan"),
     currentDay: 8,
     streak: 5,
     longestStreak: 5,
     xp: 1580,
     level: 2,
+    missedDays: [2],
   },
 ];
 

@@ -17,6 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getTrack, randomMessage, streakMessage, type ChallengeDay } from "@/data/tracks";
+import { av } from "@/data/community";
 import { useApp, greeting } from "@/lib/store";
 import { DASHBOARD_CHECKLIST, accentClasses, difficultyAccent, trackAccent } from "@/lib/gamify";
 import { Confetti, Counter, EmptyState, Icon, Pill, ProgressRing } from "@/components/common";
@@ -27,6 +28,7 @@ import { LeaderboardList } from "@/components/LeaderboardList";
 import { ContributionCalendar, WeeklyCharts } from "@/components/DashboardCharts";
 import { ProfileModal } from "@/components/ProfileModal";
 import { SettingsSheet } from "@/components/SettingsSheet";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { OnboardingSheet } from "@/components/OnboardingSheet";
 import { BottomNav } from "@/components/BottomNav";
 import { cn } from "@/lib/utils";
@@ -113,12 +115,13 @@ function Dashboard() {
       <Confetti show={confetti} />
 
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/70 px-4 py-3 backdrop-blur-xl">
-        <div className="mx-auto grid max-w-3xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
+        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
           <div className="min-w-0">
             <p className="truncate text-[13px] text-muted-foreground">{greeting()},</p>
             <h1 className="truncate text-lg font-bold">{state.user.name.split(" ")[0]} 👋</h1>
           </div>
           <div className="flex shrink-0 items-center gap-2">
+            <ThemeToggle />
             <Button variant="glass" size="icon" aria-label="Notifications" onClick={() => toast("Streak warning: submit before midnight to keep your streak alive.")}>
               <Bell className="size-[18px]" />
             </Button>
@@ -127,30 +130,48 @@ function Dashboard() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl space-y-5 px-4 py-5">
+      <main className="mx-auto max-w-7xl space-y-5 px-4 py-5">
+        <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)] xl:gap-6">
+        <div className="space-y-5">
         {/* motivational */}
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="glass rounded-3xl p-4">
-          <Quote className="size-4 text-violet" />
-          <p className="mt-1.5 text-[15px] font-medium italic">"{quote}"</p>
-          <p className="mt-1 text-xs text-muted-foreground">{streakMessage(state.streak)}</p>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="glass relative flex items-start gap-3.5 overflow-hidden rounded-3xl p-5"
+        >
+          <div className="absolute inset-y-0 left-0 w-1 bg-[image:var(--gradient-violet)]" />
+          <div className="grid size-10 shrink-0 place-items-center rounded-2xl bg-violet/12">
+            <Quote className="size-4 text-violet" />
+          </div>
+          <div className="min-w-0">
+            <p className="text-[15px] font-medium italic leading-snug sm:text-base">"{quote}"</p>
+            <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
+              <Flame className="size-3.5 text-orange" /> {streakMessage(state.streak)}
+            </p>
+          </div>
         </motion.div>
 
         {/* profile card */}
-        <div className="glass-strong relative overflow-hidden rounded-3xl p-4">
-          <div className={cn("absolute inset-x-0 top-0 h-28 bg-gradient-to-b opacity-50", a.grad)} />
+        <div className="glass-strong relative overflow-hidden rounded-3xl p-5">
+          <div className={cn("absolute inset-x-0 top-0 h-32 bg-gradient-to-b opacity-60", a.grad)} />
           <div className="relative">
-            <div className="flex items-center gap-3">
-              <img
-                src={state.profile.avatar || `https://api.dicebear.com/9.x/adventurer/svg?seed=${state.user.name}`}
-                alt=""
-                className="size-14 shrink-0 rounded-2xl bg-secondary"
-              />
+            <div className="flex items-center gap-4">
+              <div className={cn("shrink-0 rounded-[20px] p-[2px]", a.bg)}>
+                <img
+                  src={state.profile.avatar || av(state.user.name)}
+                  alt={`${state.user.name} avatar`}
+                  loading="lazy"
+                  width={64}
+                  height={64}
+                  className="size-16 rounded-[18px] bg-secondary object-cover"
+                />
+              </div>
               <div className="min-w-0 flex-1">
-                <p className="truncate font-bold">{state.user.name}</p>
+                <p className="truncate text-lg font-bold leading-tight">{state.user.name}</p>
                 <p className="truncate text-xs text-muted-foreground">
                   {state.profile.college || "Add your college"} · {track.name}
                 </p>
-                <div className="mt-1.5 flex flex-wrap gap-1.5">
+                <div className="mt-2 flex flex-wrap gap-1.5">
                   <Pill accent="orange">
                     <Flame className="size-3" /> {state.streak} day streak
                   </Pill>
@@ -159,7 +180,7 @@ function Dashboard() {
               </div>
             </div>
 
-            <div className="mt-4 grid grid-cols-3 gap-2 text-center sm:grid-cols-6">
+            <div className="mt-5 grid grid-cols-3 gap-2 text-center sm:grid-cols-6">
               {[
                 { k: "Day", v: day },
                 { k: "Streak", v: state.streak },
@@ -168,9 +189,9 @@ function Dashboard() {
                 { k: "Level", v: level.level },
                 { k: "Rank", v: rank },
               ].map((m) => (
-                <div key={m.k} className="rounded-2xl bg-secondary/50 py-2">
-                  <Counter to={m.v} className="text-base font-bold" />
-                  <p className="text-[10px] text-muted-foreground">{m.k}</p>
+                <div key={m.k} className="rounded-2xl border border-border/60 bg-secondary/40 py-2.5">
+                  <Counter to={m.v} className="text-base font-bold tabular-nums" />
+                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{m.k}</p>
                 </div>
               ))}
             </div>
@@ -203,46 +224,6 @@ function Dashboard() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* progress ring */}
-        <div className="glass flex flex-col items-center gap-3 rounded-3xl p-5 sm:flex-row sm:justify-around">
-          <ProgressRing value={completionPercent}>
-            <div>
-              <p className="text-[11px] uppercase tracking-wider text-muted-foreground">Day</p>
-              <p className="text-4xl font-bold leading-none">{day}</p>
-              <p className="mt-1 text-sm font-semibold text-violet">{completionPercent}%</p>
-            </div>
-          </ProgressRing>
-          <div className="text-center sm:text-left">
-            <p className="text-sm text-muted-foreground">{state.completedDays.length} / 60 days completed</p>
-            {nextBadgeDays && (
-              <p className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-orange/12 px-3 py-1.5 text-xs font-semibold text-orange">
-                <Sparkles className="size-3.5" /> {nextBadgeDays - state.streak} days to the {nextBadgeDays} Day badge
-              </p>
-            )}
-            {state.streakFreeze > 0 && (
-              <p className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-blue/12 px-3 py-1.5 text-xs font-semibold text-blue">
-                <Snowflake className="size-3.5" /> {state.streakFreeze} streak freeze available
-              </p>
-            )}
-          </div>
-        </div>
-
-        {/* daily reward */}
-        <div className="glass flex items-center gap-3 rounded-3xl p-4">
-          <div className="grid size-11 shrink-0 place-items-center rounded-2xl bg-orange/12">
-            <Gift className={cn("size-5 text-orange", canSpin && "animate-flame")} />
-          </div>
-          <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold">Daily reward</p>
-            <p className="truncate text-xs text-muted-foreground">
-              {canSpin ? "Spin the wheel once every day" : `Today: ${state.spinReward}`}
-            </p>
-          </div>
-          <Button size="sm" variant={canSpin ? "streak" : "outline"} disabled={!canSpin} onClick={spin}>
-            {canSpin ? "Spin" : "Claimed"}
-          </Button>
         </div>
 
         {/* today's task */}
@@ -297,20 +278,77 @@ function Dashboard() {
           <DayChecklist day={day} only={DASHBOARD_CHECKLIST} onComplete={() => { setConfetti(true); setTimeout(() => setConfetti(false), 2600); toast.success("Checklist complete! 🎉"); }} />
         </div>
 
-        {/* tabs */}
-        <Tabs defaultValue="journey">
-          <TabsList className="grid w-full grid-cols-4 rounded-2xl bg-secondary/60">
-            <TabsTrigger value="journey" className="rounded-xl text-xs">Journey</TabsTrigger>
+        </div>
+
+        {/* right rail */}
+        <aside className="space-y-5 lg:sticky lg:top-20">
+          {/* progress ring */}
+          <div className="glass flex flex-col items-center gap-4 rounded-3xl p-5 sm:flex-row sm:justify-around lg:flex-col">
+            <ProgressRing value={completionPercent}>
+              <div>
+                <p className="text-[11px] uppercase tracking-wider text-muted-foreground">Day</p>
+                <p className="text-4xl font-bold leading-none">{day}</p>
+                <p className="mt-1 text-sm font-semibold text-violet">{completionPercent}%</p>
+              </div>
+            </ProgressRing>
+            <div className="text-center">
+              <p className="text-sm text-muted-foreground">{state.completedDays.length} / 60 days completed</p>
+              {nextBadgeDays && (
+                <p className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-orange/12 px-3 py-1.5 text-xs font-semibold text-orange">
+                  <Sparkles className="size-3.5" /> {nextBadgeDays - state.streak} days to the {nextBadgeDays} Day badge
+                </p>
+              )}
+              {state.streakFreeze > 0 && (
+                <p className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-blue/12 px-3 py-1.5 text-xs font-semibold text-blue">
+                  <Snowflake className="size-3.5" /> {state.streakFreeze} streak freeze available
+                </p>
+              )}
+            </div>
+          </div>
+
+          {/* daily reward */}
+          <div className="glass flex items-center gap-3 rounded-3xl p-4">
+            <div className="grid size-11 shrink-0 place-items-center rounded-2xl bg-orange/12">
+              <Gift className={cn("size-5 text-orange", canSpin && "animate-flame")} />
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold">Daily reward</p>
+              <p className="truncate text-xs text-muted-foreground">
+                {canSpin ? "Spin the wheel once every day" : `Today: ${state.spinReward}`}
+              </p>
+            </div>
+            <Button size="sm" variant={canSpin ? "streak" : "outline"} disabled={!canSpin} onClick={spin}>
+              {canSpin ? "Spin" : "Claimed"}
+            </Button>
+          </div>
+
+          <div className="glass flex items-center gap-3 rounded-3xl p-4">
+            <Zap className="size-5 shrink-0 text-violet" />
+            <p className="text-sm text-muted-foreground">
+              Keep going —{" "}
+              <Link to="/day/$day" params={{ day: String(day) }} className="font-semibold text-foreground underline underline-offset-4">
+                Day {day}
+              </Link>{" "}
+              is waiting.
+            </p>
+          </div>
+        </aside>
+        </div>
+
+        {/* full width analytics */}
+        <Tabs defaultValue="stats">
+          <TabsList className="grid w-full max-w-xl grid-cols-4 rounded-2xl bg-secondary/60">
             <TabsTrigger value="stats" className="rounded-xl text-xs">Stats</TabsTrigger>
+            <TabsTrigger value="journey" className="rounded-xl text-xs">Journey</TabsTrigger>
             <TabsTrigger value="badges" className="rounded-xl text-xs">Badges</TabsTrigger>
             <TabsTrigger value="rank" className="rounded-xl text-xs">Rank</TabsTrigger>
           </TabsList>
-          <TabsContent value="journey" className="mt-4">
-            <JourneyMap completedDays={state.completedDays} currentDay={day} />
-          </TabsContent>
           <TabsContent value="stats" className="mt-4 space-y-4">
             <ContributionCalendar completedDays={state.completedDays} currentDay={day} />
             <WeeklyCharts completedDays={state.completedDays} currentDay={day} xp={xp} />
+          </TabsContent>
+          <TabsContent value="journey" className="mt-4">
+            <JourneyMap completedDays={state.completedDays} currentDay={day} />
           </TabsContent>
           <TabsContent value="badges" className="mt-4">
             {unlockedAchievements.length === 0 ? (
@@ -323,17 +361,6 @@ function Dashboard() {
             <LeaderboardList limit={10} you={{ name: state.user.name, xp, rank }} />
           </TabsContent>
         </Tabs>
-
-        <div className="glass flex items-center gap-3 rounded-3xl p-4">
-          <Zap className="size-5 shrink-0 text-violet" />
-          <p className="text-sm text-muted-foreground">
-            Keep going —{" "}
-            <Link to="/day/$day" params={{ day: String(day) }} className="font-semibold text-foreground underline underline-offset-4">
-              Day {day}
-            </Link>{" "}
-            is waiting.
-          </p>
-        </div>
       </main>
 
       <ProfileModal open={profileOpen} onOpenChange={setProfileOpen} />

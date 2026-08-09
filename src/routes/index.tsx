@@ -21,6 +21,7 @@ import { FAQS, TESTIMONIALS } from "@/data/community";
 import { accentClasses } from "@/lib/gamify";
 import { Counter, FloatingBackdrop, Icon, Pill, SectionTitle } from "@/components/common";
 import { OnboardingSheet } from "@/components/OnboardingSheet";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { LeaderboardList } from "@/components/LeaderboardList";
 import { BottomNav } from "@/components/BottomNav";
 import { useApp } from "@/lib/store";
@@ -81,15 +82,18 @@ function Landing() {
               ABTalks <span className="text-muted-foreground">· 60 Days</span>
             </p>
           </div>
-          {state.user ? (
-            <Button size="sm" variant="premium" asChild>
-              <Link to="/dashboard">Dashboard</Link>
-            </Button>
-          ) : (
-            <Button size="sm" variant="premium" onClick={() => setOpen(true)}>
-              Start
-            </Button>
-          )}
+          <div className="flex shrink-0 items-center gap-2">
+            <ThemeToggle />
+            {state.user ? (
+              <Button size="sm" variant="premium" asChild>
+                <Link to="/dashboard">Dashboard</Link>
+              </Button>
+            ) : (
+              <Button size="sm" variant="premium" onClick={() => setOpen(true)}>
+                Start
+              </Button>
+            )}
+          </div>
         </div>
       </header>
 

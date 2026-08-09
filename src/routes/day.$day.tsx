@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { ArrowLeft, ArrowRight, CheckCircle2, Clock, Flame, Lock } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarX, CheckCircle2, Clock, Flame, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getTrack, randomMessage } from "@/data/tracks";
 import { useApp } from "@/lib/store";
@@ -55,6 +55,7 @@ function DayPage() {
 
   const locked = day > state.currentDay;
   const submitted = Boolean(state.dailySubmissions[day]?.submittedAt);
+  const missed = !submitted && day < state.currentDay;
 
   return (
     <div className="hero-bg min-h-screen pb-28">
@@ -84,6 +85,11 @@ function DayPage() {
               {submitted && (
                 <Pill accent="emerald">
                   <CheckCircle2 className="size-3" /> Submitted
+                </Pill>
+              )}
+              {missed && (
+                <Pill accent="rose">
+                  <CalendarX className="size-3" /> Missed
                 </Pill>
               )}
             </div>

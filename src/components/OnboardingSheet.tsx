@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { DEMO_STUDENTS } from "@/data/community";
+import { buildDemoProgress } from "@/data/seed";
 import { TRACKS, type TrackId } from "@/data/tracks";
 import { useApp } from "@/lib/store";
 import { accentClasses, trackAccent } from "@/lib/gamify";
@@ -56,18 +57,21 @@ export function OnboardingSheet({
   const pickDemo = (id: string) => {
     const s = DEMO_STUDENTS.find((d) => d.id === id);
     if (!s) return;
-    const completed = Array.from({ length: s.currentDay - 1 }, (_, i) => i + 1);
+    const { completedDays, dailySubmissions, checklists } = buildDemoProgress(s);
+    // XP is derived from submissions + checklists, so keep the base low enough
+    // that the student's headline XP stays realistic.
+    const earned = completedDays.length * 360 + s.currentDay * 5 + 30;
     update({
       user: { id: s.id, name: s.name, email: s.email },
       track: s.track,
       currentDay: s.currentDay,
-      completedDays: completed,
+      completedDays,
       profile: { avatar: s.avatar, college: s.college, github: `github.com/${s.name.split(" ")[0]?.toLowerCase()}` },
-      baseXp: s.xp,
+      baseXp: Math.max(0, s.xp - earned),
       streak: s.streak,
       longestStreak: s.longestStreak,
-      dailySubmissions: {},
-      checklists: {},
+      dailySubmissions,
+      checklists,
       lastLogin: new Date().toDateString(),
       loginDays: s.currentDay,
       streakFreeze: 1,

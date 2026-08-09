@@ -37,6 +37,9 @@
   --color-emerald: var(--emerald);
   --color-orange: var(--orange);
   --color-rose: var(--rose);
+  --color-cyan: var(--cyan);
+  --color-amber: var(--amber);
+  --color-pink: var(--pink);
   --color-chart-1: var(--violet);
   --color-chart-2: var(--blue);
   --color-chart-3: var(--emerald);
@@ -49,13 +52,76 @@
 
 :root {
   --radius: 1.15rem;
+  /* ---- Light theme (default) ---- */
+  --brand-h: 295;
+  --brand-c: 0.2;
+
+  --background: oklch(0.985 0.006 285);
+  --foreground: oklch(0.21 0.03 278);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.03 278);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.03 278);
+  --primary: oklch(0.55 var(--brand-c) var(--brand-h));
+  --primary-foreground: oklch(0.99 0.01 280);
+  --secondary: oklch(0.945 0.012 285);
+  --secondary-foreground: oklch(0.28 0.03 278);
+  --muted: oklch(0.945 0.012 285);
+  --muted-foreground: oklch(0.5 0.025 278);
+  --accent: oklch(0.93 0.03 var(--brand-h));
+  --accent-foreground: oklch(0.28 0.05 var(--brand-h));
+  --destructive: oklch(0.58 0.22 22);
+  --destructive-foreground: oklch(0.99 0.01 280);
+  --border: oklch(0.9 0.014 285 / 90%);
+  --input: oklch(0.9 0.014 285);
+  --ring: oklch(0.55 var(--brand-c) var(--brand-h));
+
+  --violet: oklch(0.55 var(--brand-c) var(--brand-h));
+  --blue: oklch(0.55 0.16 245);
+  --emerald: oklch(0.55 0.14 163);
+  --orange: oklch(0.62 0.16 60);
+  --rose: oklch(0.58 0.19 15);
+  --cyan: oklch(0.6 0.13 210);
+  --amber: oklch(0.68 0.15 85);
+  --pink: oklch(0.6 0.2 350);
+
+  --gradient-hero: radial-gradient(
+      120% 90% at 10% 0%,
+      color-mix(in oklab, var(--violet) 14%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(90% 80% at 95% 10%, color-mix(in oklab, var(--blue) 12%, transparent), transparent 60%),
+    radial-gradient(90% 70% at 50% 100%, color-mix(in oklab, var(--emerald) 8%, transparent), transparent 60%);
+  --gradient-violet: linear-gradient(135deg, var(--violet), var(--blue));
+  --gradient-emerald: linear-gradient(135deg, var(--emerald), var(--blue));
+  --gradient-orange: linear-gradient(135deg, var(--orange), var(--rose));
+  --shadow-premium: 0 18px 50px -18px color-mix(in oklab, var(--violet) 55%, transparent);
+  --shadow-soft: 0 10px 30px -18px oklch(0.3 0.04 280 / 22%);
+}
+
+/* ---- Accent presets (set data-accent on <html>) ---- */
+:root[data-accent="violet"] { --brand-h: 295; --brand-c: 0.2; }
+:root[data-accent="blue"] { --brand-h: 250; --brand-c: 0.17; }
+:root[data-accent="emerald"] { --brand-h: 163; --brand-c: 0.15; }
+:root[data-accent="orange"] { --brand-h: 60; --brand-c: 0.16; }
+:root[data-accent="rose"] { --brand-h: 12; --brand-c: 0.19; }
+:root[data-accent="cyan"] { --brand-h: 210; --brand-c: 0.14; }
+
+.dark {
   --background: oklch(0.16 0.022 275);
+  --gradient-hero: radial-gradient(
+      120% 90% at 10% 0%,
+      color-mix(in oklab, var(--violet) 32%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(90% 80% at 95% 10%, color-mix(in oklab, var(--blue) 26%, transparent), transparent 60%),
+    radial-gradient(90% 70% at 50% 100%, color-mix(in oklab, var(--emerald) 16%, transparent), transparent 60%);
   --foreground: oklch(0.97 0.005 280);
   --card: oklch(0.21 0.025 274);
   --card-foreground: oklch(0.97 0.005 280);
   --popover: oklch(0.19 0.024 274);
   --popover-foreground: oklch(0.97 0.005 280);
-  --primary: oklch(0.66 0.21 295);
+  --primary: oklch(0.66 calc(var(--brand-c) + 0.01) var(--brand-h));
   --primary-foreground: oklch(0.99 0.01 280);
   --secondary: oklch(0.27 0.03 274);
   --secondary-foreground: oklch(0.95 0.005 280);
@@ -67,25 +133,16 @@
   --destructive-foreground: oklch(0.99 0.01 280);
   --border: oklch(0.32 0.03 278 / 60%);
   --input: oklch(0.3 0.03 278 / 70%);
-  --ring: oklch(0.66 0.21 295);
+  --ring: oklch(0.66 var(--brand-c) var(--brand-h));
 
-  --violet: oklch(0.68 0.2 295);
+  --violet: oklch(0.68 var(--brand-c) var(--brand-h));
   --blue: oklch(0.68 0.16 245);
   --emerald: oklch(0.72 0.16 163);
   --orange: oklch(0.75 0.17 60);
   --rose: oklch(0.68 0.19 15);
-
-  --gradient-hero: radial-gradient(
-      120% 90% at 10% 0%,
-      color-mix(in oklab, var(--violet) 32%, transparent),
-      transparent 60%
-    ),
-    radial-gradient(90% 80% at 95% 10%, color-mix(in oklab, var(--blue) 26%, transparent), transparent 60%),
-    radial-gradient(90% 70% at 50% 100%, color-mix(in oklab, var(--emerald) 16%, transparent), transparent 60%);
-  --gradient-violet: linear-gradient(135deg, var(--violet), var(--blue));
-  --gradient-emerald: linear-gradient(135deg, var(--emerald), var(--blue));
-  --gradient-orange: linear-gradient(135deg, var(--orange), var(--rose));
-  --shadow-premium: 0 18px 50px -18px color-mix(in oklab, var(--violet) 55%, transparent);
+  --cyan: oklch(0.72 0.13 210);
+  --amber: oklch(0.8 0.15 85);
+  --pink: oklch(0.7 0.2 350);
   --shadow-soft: 0 10px 30px -14px oklch(0 0 0 / 70%);
 }
 
@@ -122,14 +179,14 @@
 @utility glass {
   background: color-mix(in oklab, var(--card) 72%, transparent);
   backdrop-filter: blur(18px);
-  border: 1px solid color-mix(in oklab, oklch(1 0 0) 8%, transparent);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow-soft);
 }
 
 @utility glass-strong {
   background: color-mix(in oklab, var(--card) 92%, transparent);
   backdrop-filter: blur(24px);
-  border: 1px solid color-mix(in oklab, oklch(1 0 0) 10%, transparent);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow-premium);
 }
 
