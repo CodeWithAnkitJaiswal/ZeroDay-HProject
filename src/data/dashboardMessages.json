@@ -1,0 +1,1272 @@
+{
+  "version": "1.0",
+  "randomMessages": [
+    {
+      "id": 1,
+      "category": "consistency",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 2,
+      "category": "growth",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 3,
+      "category": "career",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 4,
+      "category": "coding",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 5,
+      "category": "mindset",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 6,
+      "category": "discipline",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 7,
+      "category": "consistency",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 8,
+      "category": "growth",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 9,
+      "category": "career",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 10,
+      "category": "coding",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 11,
+      "category": "mindset",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 12,
+      "category": "discipline",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 13,
+      "category": "consistency",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 14,
+      "category": "growth",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 15,
+      "category": "career",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 16,
+      "category": "coding",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 17,
+      "category": "mindset",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 18,
+      "category": "discipline",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 19,
+      "category": "consistency",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 20,
+      "category": "growth",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 21,
+      "category": "career",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 22,
+      "category": "coding",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 23,
+      "category": "mindset",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 24,
+      "category": "discipline",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 25,
+      "category": "consistency",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 26,
+      "category": "growth",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 27,
+      "category": "career",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 28,
+      "category": "coding",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 29,
+      "category": "mindset",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 30,
+      "category": "discipline",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 31,
+      "category": "consistency",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 32,
+      "category": "growth",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 33,
+      "category": "career",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 34,
+      "category": "coding",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 35,
+      "category": "mindset",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 36,
+      "category": "discipline",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 37,
+      "category": "consistency",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 38,
+      "category": "growth",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 39,
+      "category": "career",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 40,
+      "category": "coding",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 41,
+      "category": "mindset",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 42,
+      "category": "discipline",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 43,
+      "category": "consistency",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 44,
+      "category": "growth",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 45,
+      "category": "career",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 46,
+      "category": "coding",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 47,
+      "category": "mindset",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 48,
+      "category": "discipline",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 49,
+      "category": "consistency",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 50,
+      "category": "growth",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 51,
+      "category": "career",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 52,
+      "category": "coding",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 53,
+      "category": "mindset",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 54,
+      "category": "discipline",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 55,
+      "category": "consistency",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 56,
+      "category": "growth",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 57,
+      "category": "career",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 58,
+      "category": "coding",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 59,
+      "category": "mindset",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 60,
+      "category": "discipline",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 61,
+      "category": "consistency",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 62,
+      "category": "growth",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 63,
+      "category": "career",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 64,
+      "category": "coding",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 65,
+      "category": "mindset",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 66,
+      "category": "discipline",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 67,
+      "category": "consistency",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 68,
+      "category": "growth",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 69,
+      "category": "career",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 70,
+      "category": "coding",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 71,
+      "category": "mindset",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 72,
+      "category": "discipline",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 73,
+      "category": "consistency",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 74,
+      "category": "growth",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 75,
+      "category": "career",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 76,
+      "category": "coding",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 77,
+      "category": "mindset",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 78,
+      "category": "discipline",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 79,
+      "category": "consistency",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 80,
+      "category": "growth",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 81,
+      "category": "career",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 82,
+      "category": "coding",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 83,
+      "category": "mindset",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 84,
+      "category": "discipline",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 85,
+      "category": "consistency",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 86,
+      "category": "growth",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 87,
+      "category": "career",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 88,
+      "category": "coding",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 89,
+      "category": "mindset",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 90,
+      "category": "discipline",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 91,
+      "category": "consistency",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 92,
+      "category": "growth",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 93,
+      "category": "career",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 94,
+      "category": "coding",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 95,
+      "category": "mindset",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 96,
+      "category": "discipline",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 97,
+      "category": "consistency",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 98,
+      "category": "growth",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 99,
+      "category": "career",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 100,
+      "category": "coding",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 101,
+      "category": "mindset",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 102,
+      "category": "discipline",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 103,
+      "category": "consistency",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 104,
+      "category": "growth",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 105,
+      "category": "career",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 106,
+      "category": "coding",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 107,
+      "category": "mindset",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 108,
+      "category": "discipline",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 109,
+      "category": "consistency",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 110,
+      "category": "growth",
+      "message": "Today's effort will impress your future self."
+    },
+    {
+      "id": 111,
+      "category": "career",
+      "message": "Every line of code builds tomorrow's opportunities."
+    },
+    {
+      "id": 112,
+      "category": "coding",
+      "message": "Small improvements compounds faster than you think."
+    },
+    {
+      "id": 113,
+      "category": "mindset",
+      "message": "Consistency is stronger than motivation."
+    },
+    {
+      "id": 114,
+      "category": "discipline",
+      "message": "Your future career starts with today's challenge."
+    },
+    {
+      "id": 115,
+      "category": "consistency",
+      "message": "Every commit moves you one step closer to mastery."
+    },
+    {
+      "id": 116,
+      "category": "growth",
+      "message": "Learning creates confidence."
+    },
+    {
+      "id": 117,
+      "category": "career",
+      "message": "Discipline turns beginners into professionals."
+    },
+    {
+      "id": 118,
+      "category": "coding",
+      "message": "Projects becomes your portfolio."
+    },
+    {
+      "id": 119,
+      "category": "mindset",
+      "message": "Progress never goes to waste."
+    },
+    {
+      "id": 120,
+      "category": "discipline",
+      "message": "Today's effort will impress your future self."
+    }
+  ],
+  "dayMessages": [
+    {
+      "day": 1,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 2,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 3,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 4,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 5,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 6,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 7,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 8,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 9,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 10,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 11,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 12,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 13,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 14,
+      "phase": 1,
+      "message": "You're laying the foundation. Keep showing up."
+    },
+    {
+      "day": 15,
+      "phase": 1,
+      "message": "Phase 1 complete! Your habit is taking shape."
+    },
+    {
+      "day": 16,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 17,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 18,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 19,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 20,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 21,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 22,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 23,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 24,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 25,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 26,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 27,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 28,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 29,
+      "phase": 2,
+      "message": "Momentum is growing. Trust the process."
+    },
+    {
+      "day": 30,
+      "phase": 2,
+      "message": "Halfway there! You're proving consistency beats intensity."
+    },
+    {
+      "day": 31,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 32,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 33,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 34,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 35,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 36,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 37,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 38,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 39,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 40,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 41,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 42,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 43,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 44,
+      "phase": 3,
+      "message": "Your skills are becoming visible through repetition."
+    },
+    {
+      "day": 45,
+      "phase": 3,
+      "message": "Phase 3 complete! You're thinking like a developer now."
+    },
+    {
+      "day": 46,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 47,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 48,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 49,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 50,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 51,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 52,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 53,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 54,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 55,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 56,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 57,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 58,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 59,
+      "phase": 4,
+      "message": "The finish line is close. Finish what you started."
+    },
+    {
+      "day": 60,
+      "phase": 4,
+      "message": "Congratulations! Sixty days completed. You built a habit, not just projects."
+    }
+  ],
+  "streakMessages": [
+    {
+      "streak": 3,
+      "message": "Habits are forming."
+    },
+    {
+      "streak": 7,
+      "message": "One week strong!"
+    },
+    {
+      "streak": 14,
+      "message": "Two weeks of consistency."
+    },
+    {
+      "streak": 21,
+      "message": "Three weeks! Keep climbing."
+    },
+    {
+      "streak": 30,
+      "message": "A month-long streak is exceptional."
+    },
+    {
+      "streak": 45,
+      "message": "You're inspiring others."
+    },
+    {
+      "streak": 60,
+      "message": "Legendary consistency!"
+    }
+  ],
+  "phaseMessages": [
+    {
+      "phase": 1,
+      "day": 15,
+      "message": "Foundation complete."
+    },
+    {
+      "phase": 2,
+      "day": 30,
+      "message": "Halfway milestone reached."
+    },
+    {
+      "phase": 3,
+      "day": 45,
+      "message": "Advanced builder unlocked."
+    },
+    {
+      "phase": 4,
+      "day": 60,
+      "message": "Challenge completed successfully."
+    }
+  ],
+  "xpMessages": [
+    {
+      "xp": 100,
+      "message": "Every expert starts somewhere."
+    },
+    {
+      "xp": 500,
+      "message": "Great start!"
+    },
+    {
+      "xp": 1000,
+      "message": "You're leveling up."
+    },
+    {
+      "xp": 2500,
+      "message": "Real skills take shape."
+    },
+    {
+      "xp": 5000,
+      "message": "Excellent dedication."
+    },
+    {
+      "xp": 7500,
+      "message": "You're among serious learners."
+    },
+    {
+      "xp": 10000,
+      "message": "Elite consistency."
+    },
+    {
+      "xp": 15000,
+      "message": "Outstanding commitment."
+    }
+  ],
+  "levelMessages": [
+    {
+      "level": 2,
+      "message": "Level 2 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 3,
+      "message": "Level 3 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 4,
+      "message": "Level 4 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 5,
+      "message": "Level 5 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 6,
+      "message": "Level 6 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 7,
+      "message": "Level 7 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 8,
+      "message": "Level 8 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 9,
+      "message": "Level 9 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 10,
+      "message": "Level 10 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 11,
+      "message": "Level 11 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 12,
+      "message": "Level 12 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 13,
+      "message": "Level 13 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 14,
+      "message": "Level 14 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 15,
+      "message": "Level 15 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 16,
+      "message": "Level 16 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 17,
+      "message": "Level 17 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 18,
+      "message": "Level 18 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 19,
+      "message": "Level 19 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 20,
+      "message": "Level 20 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 21,
+      "message": "Level 21 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 22,
+      "message": "Level 22 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 23,
+      "message": "Level 23 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 24,
+      "message": "Level 24 unlocked! Keep investing in your future."
+    },
+    {
+      "level": 25,
+      "message": "Level 25 unlocked! Keep investing in your future."
+    }
+  ],
+  "rankMessages": [
+    {
+      "rank": 100,
+      "message": "Top 100!"
+    },
+    {
+      "rank": 50,
+      "message": "Top 50!"
+    },
+    {
+      "rank": 25,
+      "message": "Top 25!"
+    },
+    {
+      "rank": 10,
+      "message": "Top 10!"
+    },
+    {
+      "rank": 3,
+      "message": "Top 3!"
+    },
+    {
+      "rank": 1,
+      "message": "You're leading the leaderboard!"
+    }
+  ],
+  "projectMessages": [
+    {
+      "projects": 1,
+      "message": "First project completed!"
+    },
+    {
+      "projects": 5,
+      "message": "Five projects in your portfolio."
+    },
+    {
+      "projects": 10,
+      "message": "Double digits! Recruiters love builders."
+    },
+    {
+      "projects": 20,
+      "message": "Twenty projects\u2014amazing consistency."
+    }
+  ],
+  "timeBasedMessages": [
+    {
+      "title": "Early Bird",
+      "message": "Morning focus creates a productive day."
+    },
+    {
+      "title": "Night Owl",
+      "message": "Late-night dedication is paying off."
+    },
+    {
+      "title": "Evening Coder",
+      "message": "Ending your day by building is a powerful habit."
+    },
+    {
+      "title": "Day Hacker",
+      "message": "You're making the most of your day."
+    }
+  ],
+  "completionMessages": [
+    {
+      "percent": 25,
+      "message": "25% completed. Keep the momentum."
+    },
+    {
+      "percent": 50,
+      "message": "Halfway there!"
+    },
+    {
+      "percent": 75,
+      "message": "Only one final stretch remains."
+    },
+    {
+      "percent": 100,
+      "message": "Mission accomplished!"
+    }
+  ],
+  "comebackMessages": [
+    {
+      "daysMissed": 1,
+      "message": "Welcome back! Continue where you left off."
+    },
+    {
+      "daysMissed": 2,
+      "message": "Two missed days don't define you. Restart today."
+    },
+    {
+      "daysMissed": 3,
+      "message": "The best comeback starts with one challenge."
+    },
+    {
+      "daysMissed": 7,
+      "message": "Every new beginning starts with today's decision."
+    }
+  ],
+  "weekendMessages": [
+    {
+      "id": 1,
+      "message": "Weekend builders become weekday winners."
+    },
+    {
+      "id": 2,
+      "message": "A Saturday project is a future interview story."
+    },
+    {
+      "id": 3,
+      "message": "Spend an hour today, thank yourself tomorrow."
+    },
+    {
+      "id": 4,
+      "message": "Weekends are perfect for building something fun."
+    },
+    {
+      "id": 5,
+      "message": "Consistency doesn't take weekends off."
+    },
+    {
+      "id": 6,
+      "message": "Create before you consume today."
+    }
+  ],
+  "achievementMessages": [
+    {
+      "id": 1,
+      "achievement": "First Challenge",
+      "message": "\ud83c\udfc6 Achievement Unlocked: First Challenge! Keep building."
+    },
+    {
+      "id": 2,
+      "achievement": "7 Day Streak",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 7 Day Streak! Keep building."
+    },
+    {
+      "id": 3,
+      "achievement": "15 Day Streak",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 15 Day Streak! Keep building."
+    },
+    {
+      "id": 4,
+      "achievement": "30 Day Streak",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 30 Day Streak! Keep building."
+    },
+    {
+      "id": 5,
+      "achievement": "60 Day Streak",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 60 Day Streak! Keep building."
+    },
+    {
+      "id": 6,
+      "achievement": "100 Commits",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 100 Commits! Keep building."
+    },
+    {
+      "id": 7,
+      "achievement": "5000 XP",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 5000 XP! Keep building."
+    },
+    {
+      "id": 8,
+      "achievement": "10000 XP",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 10000 XP! Keep building."
+    },
+    {
+      "id": 9,
+      "achievement": "First Project",
+      "message": "\ud83c\udfc6 Achievement Unlocked: First Project! Keep building."
+    },
+    {
+      "id": 10,
+      "achievement": "10 Projects",
+      "message": "\ud83c\udfc6 Achievement Unlocked: 10 Projects! Keep building."
+    },
+    {
+      "id": 11,
+      "achievement": "Challenge Completed",
+      "message": "\ud83c\udfc6 Achievement Unlocked: Challenge Completed! Keep building."
+    }
+  ]
+}

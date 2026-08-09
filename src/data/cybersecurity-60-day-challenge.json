@@ -1,0 +1,733 @@
+[
+  {
+    "day": 1,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Cybersecurity Basics",
+    "subtopic": [
+      "CIA Triad",
+      "Threats",
+      "Attack Surface"
+    ],
+    "task": "Learn core cybersecurity concepts and identify common threats.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 2,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Operating Systems",
+    "subtopic": [
+      "Windows",
+      "Linux",
+      "CLI"
+    ],
+    "task": "Practice essential Linux terminal commands.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 3,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Networking Basics",
+    "subtopic": [
+      "OSI",
+      "TCP/IP",
+      "Ports"
+    ],
+    "task": "Map the OSI model to real protocols.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 4,
+    "phase": "Cybersecurity Foundations",
+    "topic": "IP Addressing",
+    "subtopic": [
+      "IPv4",
+      "Subnetting",
+      "CIDR"
+    ],
+    "task": "Solve subnetting exercises.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 5,
+    "phase": "Cybersecurity Foundations",
+    "topic": "DNS & HTTP",
+    "subtopic": [
+      "DNS",
+      "HTTP",
+      "HTTPS"
+    ],
+    "task": "Inspect web requests using browser developer tools.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 6,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Virtual Machines",
+    "subtopic": [
+      "VirtualBox",
+      "Snapshots"
+    ],
+    "task": "Set up a cybersecurity lab with two VMs.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 7,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Linux Security",
+    "subtopic": [
+      "Permissions",
+      "Users",
+      "Groups"
+    ],
+    "task": "Harden a Linux system with proper permissions.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 8,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Windows Security",
+    "subtopic": [
+      "Users",
+      "Firewall",
+      "Defender"
+    ],
+    "task": "Configure Windows security settings.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 9,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Cryptography",
+    "subtopic": [
+      "Hashing",
+      "Encryption",
+      "Symmetric"
+    ],
+    "task": "Hash and encrypt sample files.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 10,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Public Key Crypto",
+    "subtopic": [
+      "RSA",
+      "Certificates",
+      "TLS"
+    ],
+    "task": "Generate SSH keys and use them.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 11,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Authentication",
+    "subtopic": [
+      "Passwords",
+      "MFA",
+      "Policies"
+    ],
+    "task": "Create a secure password policy.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 12,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Security Tools",
+    "subtopic": [
+      "Wireshark",
+      "Nmap"
+    ],
+    "task": "Install and explore security tools.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 13,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Log Analysis",
+    "subtopic": [
+      "System Logs",
+      "Events"
+    ],
+    "task": "Review system logs for suspicious activity.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 14,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Security Awareness",
+    "subtopic": [
+      "Phishing",
+      "Social Engineering"
+    ],
+    "task": "Identify phishing emails.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 15,
+    "phase": "Cybersecurity Foundations",
+    "topic": "Mini Project",
+    "subtopic": [
+      "Lab",
+      "Documentation"
+    ],
+    "task": "Document your home cybersecurity lab.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 16,
+    "phase": "Networking & Web Security",
+    "topic": "Network Scanning",
+    "subtopic": [
+      "Nmap",
+      "Discovery"
+    ],
+    "task": "Scan your lab network.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 17,
+    "phase": "Networking & Web Security",
+    "topic": "Packet Analysis",
+    "subtopic": [
+      "Wireshark",
+      "Packets"
+    ],
+    "task": "Capture and analyze HTTP traffic.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 18,
+    "phase": "Networking & Web Security",
+    "topic": "Firewalls",
+    "subtopic": [
+      "iptables",
+      "Windows Firewall"
+    ],
+    "task": "Create basic firewall rules.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 19,
+    "phase": "Networking & Web Security",
+    "topic": "Web Security",
+    "subtopic": [
+      "OWASP Top 10",
+      "Risks"
+    ],
+    "task": "Study OWASP Top 10 vulnerabilities.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 20,
+    "phase": "Networking & Web Security",
+    "topic": "SQL Injection",
+    "subtopic": [
+      "Injection",
+      "Prepared Statements"
+    ],
+    "task": "Practice SQLi in a legal lab.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 21,
+    "phase": "Networking & Web Security",
+    "topic": "XSS",
+    "subtopic": [
+      "Stored",
+      "Reflected",
+      "DOM"
+    ],
+    "task": "Identify and mitigate XSS vulnerabilities.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 22,
+    "phase": "Networking & Web Security",
+    "topic": "CSRF",
+    "subtopic": [
+      "Tokens",
+      "Sessions"
+    ],
+    "task": "Implement CSRF protection.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 23,
+    "phase": "Networking & Web Security",
+    "topic": "Authentication Security",
+    "subtopic": [
+      "JWT",
+      "Sessions"
+    ],
+    "task": "Analyze common authentication flaws.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 24,
+    "phase": "Networking & Web Security",
+    "topic": "Burp Suite",
+    "subtopic": [
+      "Proxy",
+      "Repeater"
+    ],
+    "task": "Intercept and modify web requests.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 25,
+    "phase": "Networking & Web Security",
+    "topic": "API Security",
+    "subtopic": [
+      "REST",
+      "Auth"
+    ],
+    "task": "Test a sample REST API for weaknesses.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 26,
+    "phase": "Networking & Web Security",
+    "topic": "Secure Coding",
+    "subtopic": [
+      "Validation",
+      "Sanitization"
+    ],
+    "task": "Fix insecure code snippets.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 27,
+    "phase": "Networking & Web Security",
+    "topic": "Vulnerability Assessment",
+    "subtopic": [
+      "CVSS",
+      "Scanning"
+    ],
+    "task": "Run a vulnerability scan in your lab.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 28,
+    "phase": "Networking & Web Security",
+    "topic": "Threat Modeling",
+    "subtopic": [
+      "Assets",
+      "Risks"
+    ],
+    "task": "Create a threat model for a web app.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 29,
+    "phase": "Networking & Web Security",
+    "topic": "Mini Project",
+    "subtopic": [
+      "Web Security"
+    ],
+    "task": "Secure a vulnerable web application.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 30,
+    "phase": "Networking & Web Security",
+    "topic": "Challenge",
+    "subtopic": [
+      "Assessment"
+    ],
+    "task": "Perform a complete security review of your lab app.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 31,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Kali Linux",
+    "subtopic": [
+      "Tools",
+      "Environment"
+    ],
+    "task": "Set up and explore Kali Linux.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 32,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Reconnaissance",
+    "subtopic": [
+      "OSINT",
+      "WHOIS"
+    ],
+    "task": "Gather public information about a demo target.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 33,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Password Security",
+    "subtopic": [
+      "Hashcat",
+      "John the Ripper"
+    ],
+    "task": "Understand password auditing in a lab.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 34,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Metasploit",
+    "subtopic": [
+      "Modules",
+      "Exploits"
+    ],
+    "task": "Practice exploitation in Metasploitable.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 35,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Privilege Escalation",
+    "subtopic": [
+      "Linux",
+      "Windows"
+    ],
+    "task": "Study privilege escalation techniques.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 36,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Wireless Security",
+    "subtopic": [
+      "Wi-Fi",
+      "WPA2"
+    ],
+    "task": "Learn Wi-Fi security concepts.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 37,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Incident Response",
+    "subtopic": [
+      "Containment",
+      "Recovery"
+    ],
+    "task": "Create an incident response checklist.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 38,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Digital Forensics",
+    "subtopic": [
+      "Disk",
+      "Memory"
+    ],
+    "task": "Analyze forensic artifacts.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 39,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Malware Analysis",
+    "subtopic": [
+      "Static",
+      "Dynamic"
+    ],
+    "task": "Inspect a safe malware sample.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 40,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "SIEM Basics",
+    "subtopic": [
+      "Logs",
+      "Alerts"
+    ],
+    "task": "Explore SIEM concepts.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 41,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "SOC Operations",
+    "subtopic": [
+      "Monitoring",
+      "Playbooks"
+    ],
+    "task": "Build a basic SOC workflow.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 42,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Blue Team",
+    "subtopic": [
+      "Detection",
+      "Defense"
+    ],
+    "task": "Write detection rules for sample attacks.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 43,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Red Team",
+    "subtopic": [
+      "Methodology",
+      "Reporting"
+    ],
+    "task": "Document a simulated penetration test.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 44,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Cloud Security",
+    "subtopic": [
+      "IAM",
+      "S3",
+      "Policies"
+    ],
+    "task": "Review cloud security best practices.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 45,
+    "phase": "Ethical Hacking & Defense",
+    "topic": "Mini Project",
+    "subtopic": [
+      "Pentest",
+      "Report"
+    ],
+    "task": "Prepare a professional penetration test report.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 46,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Container Security",
+    "subtopic": [
+      "Docker",
+      "Images"
+    ],
+    "task": "Scan container images for vulnerabilities.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 47,
+    "phase": "Advanced Security & Capstone",
+    "topic": "DevSecOps",
+    "subtopic": [
+      "CI/CD",
+      "SAST"
+    ],
+    "task": "Integrate security into a CI pipeline.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 48,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Secrets Management",
+    "subtopic": [
+      "Vault",
+      "Environment"
+    ],
+    "task": "Secure application secrets.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 49,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Compliance",
+    "subtopic": [
+      "ISO 27001",
+      "NIST"
+    ],
+    "task": "Map controls to a sample organization.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 50,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Cloud Defense",
+    "subtopic": [
+      "AWS Security",
+      "Azure"
+    ],
+    "task": "Harden cloud resources.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 51,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Threat Hunting",
+    "subtopic": [
+      "Indicators",
+      "Hypotheses"
+    ],
+    "task": "Search logs for suspicious behavior.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 52,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Security Automation",
+    "subtopic": [
+      "Python",
+      "Automation"
+    ],
+    "task": "Automate log analysis with Python.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 53,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Risk Assessment",
+    "subtopic": [
+      "Likelihood",
+      "Impact"
+    ],
+    "task": "Assess risks for a small company.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 54,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Bug Bounty",
+    "subtopic": [
+      "Methodology",
+      "Reporting"
+    ],
+    "task": "Practice responsible vulnerability reporting.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 55,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Career Skills",
+    "subtopic": [
+      "Resume",
+      "Certifications"
+    ],
+    "task": "Prepare a cybersecurity portfolio.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 56,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Capstone Planning",
+    "subtopic": [
+      "Architecture",
+      "Scope"
+    ],
+    "task": "Plan a complete security assessment.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 57,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Capstone Execution",
+    "subtopic": [
+      "Testing",
+      "Documentation"
+    ],
+    "task": "Perform the assessment in your lab.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 58,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Remediation",
+    "subtopic": [
+      "Fixes",
+      "Hardening"
+    ],
+    "task": "Implement security improvements.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 59,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Final Review",
+    "subtopic": [
+      "Validation",
+      "Reporting"
+    ],
+    "task": "Verify fixes and finalize documentation.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 60,
+    "phase": "Advanced Security & Capstone",
+    "topic": "Launch",
+    "subtopic": [
+      "Presentation",
+      "GitHub",
+      "Portfolio"
+    ],
+    "task": "Publish your lab documentation and capstone report.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  }
+]

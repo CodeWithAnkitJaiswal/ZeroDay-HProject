@@ -1,0 +1,718 @@
+[
+  {
+    "day": 1,
+    "phase": "Programming Foundations",
+    "topic": "Programming Basics",
+    "subtopic": [
+      "Variables",
+      "Input/Output",
+      "Data Types"
+    ],
+    "task": "Solve 10 basic programming problems.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 2,
+    "phase": "Programming Foundations",
+    "topic": "Time Complexity",
+    "subtopic": [
+      "Big-O",
+      "Big-Theta",
+      "Big-Omega"
+    ],
+    "task": "Analyze complexity of simple algorithms.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 3,
+    "phase": "Programming Foundations",
+    "topic": "Arrays",
+    "subtopic": [
+      "Traversal",
+      "Insertion",
+      "Deletion"
+    ],
+    "task": "Solve 5 array problems.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 4,
+    "phase": "Programming Foundations",
+    "topic": "Strings",
+    "subtopic": [
+      "Traversal",
+      "Manipulation",
+      "Palindrome"
+    ],
+    "task": "Solve common string questions.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 5,
+    "phase": "Programming Foundations",
+    "topic": "Recursion",
+    "subtopic": [
+      "Base Case",
+      "Call Stack"
+    ],
+    "task": "Implement factorial, Fibonacci and reverse string.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 6,
+    "phase": "Programming Foundations",
+    "topic": "Searching",
+    "subtopic": [
+      "Linear Search",
+      "Binary Search"
+    ],
+    "task": "Solve binary search variations.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 7,
+    "phase": "Programming Foundations",
+    "topic": "Sorting I",
+    "subtopic": [
+      "Bubble",
+      "Selection",
+      "Insertion"
+    ],
+    "task": "Implement basic sorting algorithms.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 8,
+    "phase": "Programming Foundations",
+    "topic": "Sorting II",
+    "subtopic": [
+      "Merge Sort",
+      "Quick Sort"
+    ],
+    "task": "Compare efficient sorting algorithms.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 9,
+    "phase": "Programming Foundations",
+    "topic": "Bit Manipulation",
+    "subtopic": [
+      "Bitwise Operators",
+      "XOR"
+    ],
+    "task": "Solve beginner bit manipulation problems.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 10,
+    "phase": "Programming Foundations",
+    "topic": "Math Algorithms",
+    "subtopic": [
+      "GCD",
+      "LCM",
+      "Prime"
+    ],
+    "task": "Implement common math algorithms.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 11,
+    "phase": "Programming Foundations",
+    "topic": "Prefix Sum",
+    "subtopic": [
+      "1D Prefix",
+      "Range Queries"
+    ],
+    "task": "Solve range sum problems.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 12,
+    "phase": "Programming Foundations",
+    "topic": "Two Pointers",
+    "subtopic": [
+      "Sliding Window",
+      "Pointers"
+    ],
+    "task": "Solve array and string questions.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 13,
+    "phase": "Programming Foundations",
+    "topic": "Practice Set",
+    "subtopic": [
+      "Mixed Problems"
+    ],
+    "task": "Solve 8 easy coding problems.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 14,
+    "phase": "Programming Foundations",
+    "topic": "Revision",
+    "subtopic": [
+      "Arrays",
+      "Strings",
+      "Recursion"
+    ],
+    "task": "Review concepts and fix mistakes.",
+    "time": "90 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 15,
+    "phase": "Programming Foundations",
+    "topic": "Challenge",
+    "subtopic": [
+      "Programming Basics"
+    ],
+    "task": "Complete a beginner coding contest.",
+    "time": "180 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 16,
+    "phase": "Core Data Structures",
+    "topic": "Linked List",
+    "subtopic": [
+      "Singly",
+      "Doubly"
+    ],
+    "task": "Implement linked list operations.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 17,
+    "phase": "Core Data Structures",
+    "topic": "Stack",
+    "subtopic": [
+      "Push",
+      "Pop",
+      "Applications"
+    ],
+    "task": "Solve stack-based problems.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 18,
+    "phase": "Core Data Structures",
+    "topic": "Queue",
+    "subtopic": [
+      "Queue",
+      "Deque"
+    ],
+    "task": "Implement queues and solve problems.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 19,
+    "phase": "Core Data Structures",
+    "topic": "Hashing",
+    "subtopic": [
+      "HashMap",
+      "HashSet"
+    ],
+    "task": "Solve frequency-based questions.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 20,
+    "phase": "Core Data Structures",
+    "topic": "Trees",
+    "subtopic": [
+      "Binary Tree",
+      "Traversal"
+    ],
+    "task": "Implement DFS traversals.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 21,
+    "phase": "Core Data Structures",
+    "topic": "Binary Search Tree",
+    "subtopic": [
+      "Insert",
+      "Delete",
+      "Search"
+    ],
+    "task": "Solve BST problems.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 22,
+    "phase": "Core Data Structures",
+    "topic": "Heap",
+    "subtopic": [
+      "Priority Queue",
+      "Heapify"
+    ],
+    "task": "Implement a min heap.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 23,
+    "phase": "Core Data Structures",
+    "topic": "Trie",
+    "subtopic": [
+      "Prefix Tree",
+      "Search"
+    ],
+    "task": "Build a dictionary using Trie.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 24,
+    "phase": "Core Data Structures",
+    "topic": "Graphs Basics",
+    "subtopic": [
+      "Adjacency List",
+      "Traversal"
+    ],
+    "task": "Implement BFS and DFS.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 25,
+    "phase": "Core Data Structures",
+    "topic": "Union Find",
+    "subtopic": [
+      "DSU",
+      "Path Compression"
+    ],
+    "task": "Solve connectivity problems.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 26,
+    "phase": "Core Data Structures",
+    "topic": "Segment Tree",
+    "subtopic": [
+      "Range Query",
+      "Update"
+    ],
+    "task": "Implement a segment tree.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 27,
+    "phase": "Core Data Structures",
+    "topic": "Fenwick Tree",
+    "subtopic": [
+      "BIT",
+      "Prefix Updates"
+    ],
+    "task": "Solve range update problems.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 28,
+    "phase": "Core Data Structures",
+    "topic": "Practice",
+    "subtopic": [
+      "Mixed DS"
+    ],
+    "task": "Solve 10 medium problems.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 29,
+    "phase": "Core Data Structures",
+    "topic": "Revision",
+    "subtopic": [
+      "Data Structures"
+    ],
+    "task": "Review all data structures.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 30,
+    "phase": "Core Data Structures",
+    "topic": "Challenge",
+    "subtopic": [
+      "Core DS"
+    ],
+    "task": "Complete a medium-level contest.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 31,
+    "phase": "Algorithms",
+    "topic": "Greedy",
+    "subtopic": [
+      "Intervals",
+      "Scheduling"
+    ],
+    "task": "Solve greedy algorithm problems.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 32,
+    "phase": "Algorithms",
+    "topic": "Backtracking",
+    "subtopic": [
+      "Permutations",
+      "Combinations"
+    ],
+    "task": "Generate all valid combinations.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 33,
+    "phase": "Algorithms",
+    "topic": "Dynamic Programming I",
+    "subtopic": [
+      "Memoization",
+      "Tabulation"
+    ],
+    "task": "Solve Fibonacci and Knapsack.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 34,
+    "phase": "Algorithms",
+    "topic": "Dynamic Programming II",
+    "subtopic": [
+      "LIS",
+      "Grid DP"
+    ],
+    "task": "Solve intermediate DP problems.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 35,
+    "phase": "Algorithms",
+    "topic": "Graph Algorithms",
+    "subtopic": [
+      "Shortest Path",
+      "Dijkstra"
+    ],
+    "task": "Implement Dijkstra's algorithm.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 36,
+    "phase": "Algorithms",
+    "topic": "Graph Algorithms II",
+    "subtopic": [
+      "MST",
+      "Kruskal",
+      "Prim"
+    ],
+    "task": "Build minimum spanning trees.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 37,
+    "phase": "Algorithms",
+    "topic": "Topological Sort",
+    "subtopic": [
+      "DAG",
+      "Kahn"
+    ],
+    "task": "Solve dependency problems.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 38,
+    "phase": "Algorithms",
+    "topic": "Shortest Paths",
+    "subtopic": [
+      "Bellman-Ford",
+      "Floyd Warshall"
+    ],
+    "task": "Compare shortest path algorithms.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 39,
+    "phase": "Algorithms",
+    "topic": "Sliding Window",
+    "subtopic": [
+      "Fixed",
+      "Variable"
+    ],
+    "task": "Solve window-based questions.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 40,
+    "phase": "Algorithms",
+    "topic": "Binary Search Patterns",
+    "subtopic": [
+      "Answer Search",
+      "Optimization"
+    ],
+    "task": "Solve advanced binary search problems.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 41,
+    "phase": "Algorithms",
+    "topic": "Monotonic Stack",
+    "subtopic": [
+      "NGE",
+      "Histogram"
+    ],
+    "task": "Solve monotonic stack questions.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 42,
+    "phase": "Algorithms",
+    "topic": "Practice",
+    "subtopic": [
+      "Algorithms"
+    ],
+    "task": "Solve 8 algorithmic problems.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 43,
+    "phase": "Algorithms",
+    "topic": "Contest",
+    "subtopic": [
+      "Mixed"
+    ],
+    "task": "Participate in an online contest.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 44,
+    "phase": "Algorithms",
+    "topic": "Revision",
+    "subtopic": [
+      "Weak Areas"
+    ],
+    "task": "Revise difficult algorithms.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 45,
+    "phase": "Algorithms",
+    "topic": "Mock Interview",
+    "subtopic": [
+      "Coding Round"
+    ],
+    "task": "Attempt a 90-minute mock interview.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 46,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Advanced DP",
+    "subtopic": [
+      "Bitmask DP",
+      "Tree DP"
+    ],
+    "task": "Solve advanced dynamic programming problems.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 47,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Advanced Graphs",
+    "subtopic": [
+      "Tarjan",
+      "SCC"
+    ],
+    "task": "Implement strongly connected components.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 48,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "String Algorithms",
+    "subtopic": [
+      "KMP",
+      "Z Algorithm"
+    ],
+    "task": "Solve pattern matching problems.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 49,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Rolling Hash",
+    "subtopic": [
+      "Hashing",
+      "Rabin-Karp"
+    ],
+    "task": "Implement rolling hash.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 50,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Geometry",
+    "subtopic": [
+      "Orientation",
+      "Convex Hull"
+    ],
+    "task": "Solve computational geometry basics.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 51,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Game Theory",
+    "subtopic": [
+      "Minimax",
+      "Nim"
+    ],
+    "task": "Solve game theory problems.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 52,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Competitive Programming",
+    "subtopic": [
+      "Templates",
+      "Fast IO"
+    ],
+    "task": "Build your CP template.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 53,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Systematic Revision",
+    "subtopic": [
+      "Patterns"
+    ],
+    "task": "Revise all important patterns.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 54,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Interview Questions",
+    "subtopic": [
+      "Top 100"
+    ],
+    "task": "Solve 10 popular interview problems.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 55,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Behavior + Coding",
+    "subtopic": [
+      "Interview Strategy"
+    ],
+    "task": "Practice explaining solutions clearly.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 56,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Capstone Prep",
+    "subtopic": [
+      "Roadmap",
+      "Weak Topics"
+    ],
+    "task": "Prepare for final challenge.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 57,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Capstone Day 1",
+    "subtopic": [
+      "Mixed Problems"
+    ],
+    "task": "Solve a curated set of hard problems.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 58,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Capstone Day 2",
+    "subtopic": [
+      "Contest"
+    ],
+    "task": "Complete a full-length coding contest.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 59,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Final Revision",
+    "subtopic": [
+      "Patterns",
+      "Optimization"
+    ],
+    "task": "Review mistakes and optimize solutions.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 60,
+    "phase": "Advanced DSA & Interview Prep",
+    "topic": "Interview Simulation",
+    "subtopic": [
+      "DSA",
+      "Problem Solving"
+    ],
+    "task": "Complete a final mock interview and publish your progress.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  }
+]

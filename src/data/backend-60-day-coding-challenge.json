@@ -1,0 +1,732 @@
+[
+  {
+    "day": 1,
+    "phase": "Backend Foundations",
+    "topic": "Backend Fundamentals",
+    "subtopic": [
+      "Client-Server",
+      "HTTP",
+      "Request/Response"
+    ],
+    "task": "Learn backend architecture and build a basic HTTP server.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 2,
+    "phase": "Backend Foundations",
+    "topic": "Node.js Basics",
+    "subtopic": [
+      "Node Runtime",
+      "Modules",
+      "REPL"
+    ],
+    "task": "Write simple Node.js scripts.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 3,
+    "phase": "Backend Foundations",
+    "topic": "NPM",
+    "subtopic": [
+      "Package.json",
+      "Dependencies",
+      "Scripts"
+    ],
+    "task": "Initialize a Node project and install packages.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 4,
+    "phase": "Backend Foundations",
+    "topic": "Core Modules",
+    "subtopic": [
+      "fs",
+      "path",
+      "os"
+    ],
+    "task": "Build a file manager CLI.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 5,
+    "phase": "Backend Foundations",
+    "topic": "Events",
+    "subtopic": [
+      "EventEmitter",
+      "Callbacks"
+    ],
+    "task": "Create a custom event system.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 6,
+    "phase": "Backend Foundations",
+    "topic": "Asynchronous JS",
+    "subtopic": [
+      "Promises",
+      "Async/Await"
+    ],
+    "task": "Read and write files asynchronously.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 7,
+    "phase": "Backend Foundations",
+    "topic": "Streams",
+    "subtopic": [
+      "Readable",
+      "Writable",
+      "Pipes"
+    ],
+    "task": "Copy large files using streams.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 8,
+    "phase": "Backend Foundations",
+    "topic": "Error Handling",
+    "subtopic": [
+      "Try/Catch",
+      "Custom Errors"
+    ],
+    "task": "Implement global error handling.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 9,
+    "phase": "Backend Foundations",
+    "topic": "Environment Variables",
+    "subtopic": [
+      "dotenv",
+      "Config"
+    ],
+    "task": "Configure environment variables.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 10,
+    "phase": "Backend Foundations",
+    "topic": "REST APIs",
+    "subtopic": [
+      "REST",
+      "CRUD",
+      "JSON"
+    ],
+    "task": "Design a simple REST API.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 11,
+    "phase": "Backend Foundations",
+    "topic": "API Design",
+    "subtopic": [
+      "Status Codes",
+      "Routes"
+    ],
+    "task": "Create API endpoints for products.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 12,
+    "phase": "Backend Foundations",
+    "topic": "Postman",
+    "subtopic": [
+      "Collections",
+      "Testing"
+    ],
+    "task": "Test all API endpoints.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 13,
+    "phase": "Backend Foundations",
+    "topic": "Mini Project",
+    "subtopic": [
+      "HTTP",
+      "Node"
+    ],
+    "task": "Build a Notes API without Express.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 14,
+    "phase": "Backend Foundations",
+    "topic": "Refactoring",
+    "subtopic": [
+      "Structure",
+      "Best Practices"
+    ],
+    "task": "Organize project into modules.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 15,
+    "phase": "Backend Foundations",
+    "topic": "Challenge",
+    "subtopic": [
+      "Node",
+      "REST"
+    ],
+    "task": "Create a Book Management API.",
+    "time": "180 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 16,
+    "phase": "Node.js & Express",
+    "topic": "Express Basics",
+    "subtopic": [
+      "Express",
+      "Middleware"
+    ],
+    "task": "Create your first Express app.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 17,
+    "phase": "Node.js & Express",
+    "topic": "Routing",
+    "subtopic": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "task": "Implement CRUD routes.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 18,
+    "phase": "Node.js & Express",
+    "topic": "Middleware",
+    "subtopic": [
+      "Custom",
+      "Built-in"
+    ],
+    "task": "Create request logging middleware.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 19,
+    "phase": "Node.js & Express",
+    "topic": "Controllers",
+    "subtopic": [
+      "MVC",
+      "Controllers"
+    ],
+    "task": "Separate routes and controllers.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 20,
+    "phase": "Node.js & Express",
+    "topic": "Validation",
+    "subtopic": [
+      "Joi",
+      "express-validator"
+    ],
+    "task": "Validate incoming requests.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 21,
+    "phase": "Node.js & Express",
+    "topic": "File Upload",
+    "subtopic": [
+      "Multer",
+      "Storage"
+    ],
+    "task": "Upload profile images.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 22,
+    "phase": "Node.js & Express",
+    "topic": "Static Files",
+    "subtopic": [
+      "Public",
+      "Assets"
+    ],
+    "task": "Serve static resources.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 23,
+    "phase": "Node.js & Express",
+    "topic": "Logging",
+    "subtopic": [
+      "Morgan",
+      "Debugging"
+    ],
+    "task": "Integrate request logging.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 24,
+    "phase": "Node.js & Express",
+    "topic": "API Project",
+    "subtopic": [
+      "CRUD",
+      "Express"
+    ],
+    "task": "Build a Todo API.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 25,
+    "phase": "Node.js & Express",
+    "topic": "Async Errors",
+    "subtopic": [
+      "Error Middleware",
+      "Async"
+    ],
+    "task": "Handle async route errors.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 26,
+    "phase": "Node.js & Express",
+    "topic": "Configuration",
+    "subtopic": [
+      "Folder Structure",
+      "Env"
+    ],
+    "task": "Create scalable project structure.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 27,
+    "phase": "Node.js & Express",
+    "topic": "Security Basics",
+    "subtopic": [
+      "Helmet",
+      "CORS"
+    ],
+    "task": "Secure your Express API.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 28,
+    "phase": "Node.js & Express",
+    "topic": "Rate Limiting",
+    "subtopic": [
+      "express-rate-limit"
+    ],
+    "task": "Protect APIs from abuse.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 29,
+    "phase": "Node.js & Express",
+    "topic": "Documentation",
+    "subtopic": [
+      "Swagger",
+      "OpenAPI"
+    ],
+    "task": "Document your API.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 30,
+    "phase": "Node.js & Express",
+    "topic": "Mini Project",
+    "subtopic": [
+      "Express",
+      "REST"
+    ],
+    "task": "Build a Blog API.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 31,
+    "phase": "Databases & Authentication",
+    "topic": "MongoDB Basics",
+    "subtopic": [
+      "Collections",
+      "Documents"
+    ],
+    "task": "Set up MongoDB and create collections.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 32,
+    "phase": "Databases & Authentication",
+    "topic": "Mongoose",
+    "subtopic": [
+      "Schemas",
+      "Models"
+    ],
+    "task": "Create data models.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 33,
+    "phase": "Databases & Authentication",
+    "topic": "CRUD Database",
+    "subtopic": [
+      "Create",
+      "Read",
+      "Update",
+      "Delete"
+    ],
+    "task": "Connect Express with MongoDB.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 34,
+    "phase": "Databases & Authentication",
+    "topic": "Relationships",
+    "subtopic": [
+      "Populate",
+      "References"
+    ],
+    "task": "Model users and posts.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 35,
+    "phase": "Databases & Authentication",
+    "topic": "Authentication",
+    "subtopic": [
+      "JWT",
+      "bcrypt"
+    ],
+    "task": "Implement user signup/login.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 36,
+    "phase": "Databases & Authentication",
+    "topic": "Authorization",
+    "subtopic": [
+      "Roles",
+      "Permissions"
+    ],
+    "task": "Restrict protected routes.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 37,
+    "phase": "Databases & Authentication",
+    "topic": "Refresh Tokens",
+    "subtopic": [
+      "JWT",
+      "Sessions"
+    ],
+    "task": "Implement token refresh flow.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 38,
+    "phase": "Databases & Authentication",
+    "topic": "Password Reset",
+    "subtopic": [
+      "Email",
+      "Tokens"
+    ],
+    "task": "Build password reset endpoints.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 39,
+    "phase": "Databases & Authentication",
+    "topic": "Pagination",
+    "subtopic": [
+      "Limit",
+      "Skip"
+    ],
+    "task": "Paginate API responses.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 40,
+    "phase": "Databases & Authentication",
+    "topic": "Filtering",
+    "subtopic": [
+      "Search",
+      "Sort"
+    ],
+    "task": "Add filtering and sorting.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 41,
+    "phase": "Databases & Authentication",
+    "topic": "Caching",
+    "subtopic": [
+      "Redis Basics",
+      "Caching"
+    ],
+    "task": "Cache API responses.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 42,
+    "phase": "Databases & Authentication",
+    "topic": "Testing APIs",
+    "subtopic": [
+      "Jest",
+      "Supertest"
+    ],
+    "task": "Write API tests.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 43,
+    "phase": "Databases & Authentication",
+    "topic": "Mini Project",
+    "subtopic": [
+      "Auth",
+      "Database"
+    ],
+    "task": "Build a Task Manager API.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 44,
+    "phase": "Databases & Authentication",
+    "topic": "Optimization",
+    "subtopic": [
+      "Indexes",
+      "Queries"
+    ],
+    "task": "Optimize MongoDB queries.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 45,
+    "phase": "Databases & Authentication",
+    "topic": "Project Review",
+    "subtopic": [
+      "Refactor",
+      "Testing"
+    ],
+    "task": "Improve project architecture.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 46,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "WebSockets",
+    "subtopic": [
+      "Socket.io",
+      "Events"
+    ],
+    "task": "Build a real-time chat backend.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 47,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Email Services",
+    "subtopic": [
+      "Nodemailer",
+      "SMTP"
+    ],
+    "task": "Send verification emails.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 48,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Cloud Storage",
+    "subtopic": [
+      "Cloudinary",
+      "Uploads"
+    ],
+    "task": "Store uploaded images.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 49,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Background Jobs",
+    "subtopic": [
+      "Cron",
+      "Queues"
+    ],
+    "task": "Schedule recurring tasks.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 50,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Docker Basics",
+    "subtopic": [
+      "Images",
+      "Containers"
+    ],
+    "task": "Containerize your backend.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 51,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "CI/CD",
+    "subtopic": [
+      "GitHub Actions",
+      "Automation"
+    ],
+    "task": "Create a deployment workflow.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 52,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Deployment",
+    "subtopic": [
+      "Render",
+      "Railway"
+    ],
+    "task": "Deploy your backend API.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 53,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "API Versioning",
+    "subtopic": [
+      "v1",
+      "v2"
+    ],
+    "task": "Version your REST API.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 54,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Microservices",
+    "subtopic": [
+      "Services",
+      "Communication"
+    ],
+    "task": "Split an app into services.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 55,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "System Design",
+    "subtopic": [
+      "Scalability",
+      "Architecture"
+    ],
+    "task": "Design a scalable backend.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 56,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Monitoring",
+    "subtopic": [
+      "Logs",
+      "Health Checks"
+    ],
+    "task": "Add monitoring endpoints.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 57,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Capstone",
+    "subtopic": [
+      "Planning",
+      "Architecture"
+    ],
+    "task": "Start a production-ready backend project.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 58,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Capstone",
+    "subtopic": [
+      "Features",
+      "Testing"
+    ],
+    "task": "Complete core backend features.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 59,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Optimization",
+    "subtopic": [
+      "Performance",
+      "Security"
+    ],
+    "task": "Optimize and secure the application.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 60,
+    "phase": "Advanced Backend & Deployment",
+    "topic": "Launch",
+    "subtopic": [
+      "Deployment",
+      "Documentation",
+      "GitHub"
+    ],
+    "task": "Deploy, document, and publish your backend project.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  }
+]

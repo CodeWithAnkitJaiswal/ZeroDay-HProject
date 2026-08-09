@@ -1,0 +1,731 @@
+[
+  {
+    "day": 1,
+    "phase": "Python & AI Foundations",
+    "topic": "Python Basics",
+    "subtopic": [
+      "Variables",
+      "Data Types",
+      "Input/Output"
+    ],
+    "task": "Solve basic Python exercises.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 2,
+    "phase": "Python & AI Foundations",
+    "topic": "Control Flow",
+    "subtopic": [
+      "If",
+      "Loops",
+      "Functions"
+    ],
+    "task": "Build a number guessing game.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 3,
+    "phase": "Python & AI Foundations",
+    "topic": "Data Structures",
+    "subtopic": [
+      "Lists",
+      "Tuples",
+      "Dictionaries"
+    ],
+    "task": "Implement common data operations.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 4,
+    "phase": "Python & AI Foundations",
+    "topic": "OOP",
+    "subtopic": [
+      "Classes",
+      "Objects",
+      "Methods"
+    ],
+    "task": "Create a library management system.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 5,
+    "phase": "Python & AI Foundations",
+    "topic": "NumPy",
+    "subtopic": [
+      "Arrays",
+      "Indexing",
+      "Vectorization"
+    ],
+    "task": "Perform numerical computations.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 6,
+    "phase": "Python & AI Foundations",
+    "topic": "Pandas",
+    "subtopic": [
+      "DataFrames",
+      "Cleaning"
+    ],
+    "task": "Clean a CSV dataset.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 7,
+    "phase": "Python & AI Foundations",
+    "topic": "Visualization",
+    "subtopic": [
+      "Matplotlib",
+      "Charts"
+    ],
+    "task": "Visualize sales data.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 8,
+    "phase": "Python & AI Foundations",
+    "topic": "Statistics",
+    "subtopic": [
+      "Mean",
+      "Median",
+      "Std Dev"
+    ],
+    "task": "Analyze a sample dataset.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 9,
+    "phase": "Python & AI Foundations",
+    "topic": "Probability",
+    "subtopic": [
+      "Distributions",
+      "Bayes"
+    ],
+    "task": "Solve probability exercises.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 10,
+    "phase": "Python & AI Foundations",
+    "topic": "Linear Algebra",
+    "subtopic": [
+      "Vectors",
+      "Matrices"
+    ],
+    "task": "Implement matrix operations.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 11,
+    "phase": "Python & AI Foundations",
+    "topic": "Calculus Basics",
+    "subtopic": [
+      "Derivatives",
+      "Gradients"
+    ],
+    "task": "Understand optimization concepts.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 12,
+    "phase": "Python & AI Foundations",
+    "topic": "AI Fundamentals",
+    "subtopic": [
+      "AI",
+      "ML",
+      "DL"
+    ],
+    "task": "Compare AI, ML and Deep Learning.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 13,
+    "phase": "Python & AI Foundations",
+    "topic": "Dataset Exploration",
+    "subtopic": [
+      "EDA",
+      "Insights"
+    ],
+    "task": "Explore the Titanic dataset.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 14,
+    "phase": "Python & AI Foundations",
+    "topic": "Data Preprocessing",
+    "subtopic": [
+      "Missing Values",
+      "Encoding"
+    ],
+    "task": "Prepare a dataset for ML.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 15,
+    "phase": "Python & AI Foundations",
+    "topic": "Mini Project",
+    "subtopic": [
+      "EDA",
+      "Visualization"
+    ],
+    "task": "Create an exploratory data analysis report.",
+    "time": "180 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 16,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "ML Workflow",
+    "subtopic": [
+      "Train/Test Split",
+      "Pipeline"
+    ],
+    "task": "Build your first ML pipeline.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 17,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Regression",
+    "subtopic": [
+      "Linear Regression",
+      "Metrics"
+    ],
+    "task": "Predict house prices.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 18,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Classification",
+    "subtopic": [
+      "Logistic Regression",
+      "Accuracy"
+    ],
+    "task": "Build a spam classifier.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 19,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "k-NN",
+    "subtopic": [
+      "Distance",
+      "Neighbors"
+    ],
+    "task": "Classify Iris flowers.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 20,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Decision Trees",
+    "subtopic": [
+      "Tree",
+      "Entropy"
+    ],
+    "task": "Train a decision tree model.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 21,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Random Forest",
+    "subtopic": [
+      "Ensemble",
+      "Feature Importance"
+    ],
+    "task": "Compare with decision trees.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 22,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "SVM",
+    "subtopic": [
+      "Hyperplane",
+      "Kernel"
+    ],
+    "task": "Classify handwritten digits.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 23,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Clustering",
+    "subtopic": [
+      "K-Means",
+      "Unsupervised"
+    ],
+    "task": "Cluster customer segments.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 24,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Dimensionality Reduction",
+    "subtopic": [
+      "PCA",
+      "Features"
+    ],
+    "task": "Reduce feature dimensions.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 25,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Model Evaluation",
+    "subtopic": [
+      "Precision",
+      "Recall",
+      "F1"
+    ],
+    "task": "Evaluate multiple models.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 26,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Hyperparameter Tuning",
+    "subtopic": [
+      "GridSearchCV",
+      "Cross Validation"
+    ],
+    "task": "Optimize a model.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 27,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Feature Engineering",
+    "subtopic": [
+      "Scaling",
+      "Selection"
+    ],
+    "task": "Improve model performance.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 28,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "Scikit-learn Pipelines",
+    "subtopic": [
+      "Pipeline",
+      "Transformers"
+    ],
+    "task": "Build reusable ML workflows.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 29,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "ML Mini Project",
+    "subtopic": [
+      "Classification",
+      "Deployment Prep"
+    ],
+    "task": "Predict loan approval.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 30,
+    "phase": "Machine Learning Fundamentals",
+    "topic": "ML Challenge",
+    "subtopic": [
+      "End-to-End ML"
+    ],
+    "task": "Complete an end-to-end ML project.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 31,
+    "phase": "Deep Learning & NLP",
+    "topic": "Neural Networks",
+    "subtopic": [
+      "Perceptron",
+      "Activation"
+    ],
+    "task": "Build a simple neural network.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 32,
+    "phase": "Deep Learning & NLP",
+    "topic": "TensorFlow/Keras",
+    "subtopic": [
+      "Sequential",
+      "Layers"
+    ],
+    "task": "Train a digit classifier.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 33,
+    "phase": "Deep Learning & NLP",
+    "topic": "CNN",
+    "subtopic": [
+      "Convolution",
+      "Pooling"
+    ],
+    "task": "Classify images.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 34,
+    "phase": "Deep Learning & NLP",
+    "topic": "Transfer Learning",
+    "subtopic": [
+      "Pretrained Models",
+      "Fine-tuning"
+    ],
+    "task": "Use MobileNet on custom data.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 35,
+    "phase": "Deep Learning & NLP",
+    "topic": "RNN Basics",
+    "subtopic": [
+      "Sequences",
+      "LSTM"
+    ],
+    "task": "Predict time-series values.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 36,
+    "phase": "Deep Learning & NLP",
+    "topic": "NLP Basics",
+    "subtopic": [
+      "Tokenization",
+      "Embeddings"
+    ],
+    "task": "Preprocess text data.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 37,
+    "phase": "Deep Learning & NLP",
+    "topic": "Sentiment Analysis",
+    "subtopic": [
+      "Text Classification",
+      "TF-IDF"
+    ],
+    "task": "Build a sentiment classifier.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 38,
+    "phase": "Deep Learning & NLP",
+    "topic": "Transformers",
+    "subtopic": [
+      "Attention",
+      "Hugging Face"
+    ],
+    "task": "Run inference with a transformer model.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 39,
+    "phase": "Deep Learning & NLP",
+    "topic": "LLMs",
+    "subtopic": [
+      "Prompting",
+      "Inference"
+    ],
+    "task": "Experiment with an open LLM.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 40,
+    "phase": "Deep Learning & NLP",
+    "topic": "Embeddings",
+    "subtopic": [
+      "Vector Search",
+      "Similarity"
+    ],
+    "task": "Build semantic search.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 41,
+    "phase": "Deep Learning & NLP",
+    "topic": "RAG",
+    "subtopic": [
+      "Retrieval",
+      "Context"
+    ],
+    "task": "Create a simple RAG pipeline.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 42,
+    "phase": "Deep Learning & NLP",
+    "topic": "AI Agents",
+    "subtopic": [
+      "Tools",
+      "Planning"
+    ],
+    "task": "Build a basic AI agent.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 43,
+    "phase": "Deep Learning & NLP",
+    "topic": "Vision Project",
+    "subtopic": [
+      "CNN",
+      "Dataset"
+    ],
+    "task": "Create an image classifier.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 44,
+    "phase": "Deep Learning & NLP",
+    "topic": "NLP Project",
+    "subtopic": [
+      "Transformers",
+      "Pipeline"
+    ],
+    "task": "Build a document summarizer.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 45,
+    "phase": "Deep Learning & NLP",
+    "topic": "Review",
+    "subtopic": [
+      "Optimization",
+      "Debugging"
+    ],
+    "task": "Improve deep learning projects.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 46,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Prompt Engineering",
+    "subtopic": [
+      "Few-shot",
+      "Chain of Thought"
+    ],
+    "task": "Compare prompting strategies.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 47,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "LangChain",
+    "subtopic": [
+      "Chains",
+      "Memory"
+    ],
+    "task": "Build an AI chatbot.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 48,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Vector Databases",
+    "subtopic": [
+      "FAISS",
+      "Chroma"
+    ],
+    "task": "Store and query embeddings.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 49,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Model Deployment",
+    "subtopic": [
+      "FastAPI",
+      "Inference"
+    ],
+    "task": "Serve an ML model as an API.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 50,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Docker",
+    "subtopic": [
+      "Containers",
+      "Images"
+    ],
+    "task": "Containerize your AI application.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 51,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "MLOps Basics",
+    "subtopic": [
+      "Experiment Tracking",
+      "Versioning"
+    ],
+    "task": "Track ML experiments.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 52,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Monitoring",
+    "subtopic": [
+      "Model Drift",
+      "Metrics"
+    ],
+    "task": "Monitor deployed models.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 53,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Cloud AI",
+    "subtopic": [
+      "AWS/GCP",
+      "Inference"
+    ],
+    "task": "Deploy a model to the cloud.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 54,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Optimization",
+    "subtopic": [
+      "Quantization",
+      "ONNX"
+    ],
+    "task": "Optimize inference speed.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 55,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Ethical AI",
+    "subtopic": [
+      "Bias",
+      "Privacy",
+      "Fairness"
+    ],
+    "task": "Audit an AI system.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 56,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Capstone Planning",
+    "subtopic": [
+      "Requirements",
+      "Architecture"
+    ],
+    "task": "Plan your final AI project.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 57,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Capstone Development",
+    "subtopic": [
+      "Backend",
+      "Model"
+    ],
+    "task": "Build the core AI application.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 58,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Capstone Integration",
+    "subtopic": [
+      "Frontend",
+      "API"
+    ],
+    "task": "Integrate model with the application.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 59,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Testing & Optimization",
+    "subtopic": [
+      "Evaluation",
+      "Performance"
+    ],
+    "task": "Test and optimize the AI system.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 60,
+    "phase": "Generative AI & MLOps Projects",
+    "topic": "Launch",
+    "subtopic": [
+      "Deployment",
+      "Documentation",
+      "Portfolio"
+    ],
+    "task": "Deploy the project and publish documentation.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  }
+]

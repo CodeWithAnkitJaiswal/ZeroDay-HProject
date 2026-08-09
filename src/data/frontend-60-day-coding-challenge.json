@@ -1,0 +1,763 @@
+[
+  {
+    "day": 1,
+    "phase": "Foundation",
+    "topic": "HTML Basics",
+    "subtopic": [
+      "Document Structure",
+      "Semantic HTML",
+      "Headings",
+      "Paragraphs"
+    ],
+    "task": "Build a personal profile webpage using semantic HTML.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 2,
+    "phase": "Foundation",
+    "topic": "Lists, Links & Images",
+    "subtopic": [
+      "Lists",
+      "Hyperlinks",
+      "Images",
+      "Paths"
+    ],
+    "task": "Create a travel blog webpage with images and navigation.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 3,
+    "phase": "Foundation",
+    "topic": "Tables & Forms",
+    "subtopic": [
+      "Tables",
+      "Forms",
+      "Inputs",
+      "Buttons"
+    ],
+    "task": "Build a student registration form.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 4,
+    "phase": "Foundation",
+    "topic": "CSS Basics",
+    "subtopic": [
+      "Selectors",
+      "Colors",
+      "Fonts",
+      "Units"
+    ],
+    "task": "Style your registration form.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 5,
+    "phase": "Foundation",
+    "topic": "Box Model",
+    "subtopic": [
+      "Margin",
+      "Padding",
+      "Border",
+      "Sizing"
+    ],
+    "task": "Create product cards.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 6,
+    "phase": "Foundation",
+    "topic": "Flexbox",
+    "subtopic": [
+      "Flex Container",
+      "Alignment",
+      "Gap",
+      "Wrap"
+    ],
+    "task": "Build a responsive navbar.",
+    "time": "90 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 7,
+    "phase": "Foundation",
+    "topic": "CSS Grid",
+    "subtopic": [
+      "Rows",
+      "Columns",
+      "Areas",
+      "Gap"
+    ],
+    "task": "Create a dashboard layout.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 8,
+    "phase": "Foundation",
+    "topic": "Responsive Design",
+    "subtopic": [
+      "Media Queries",
+      "Mobile First",
+      "Breakpoints"
+    ],
+    "task": "Make previous layouts responsive.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 9,
+    "phase": "Foundation",
+    "topic": "Transitions",
+    "subtopic": [
+      "Hover",
+      "Transition",
+      "Transform"
+    ],
+    "task": "Create animated buttons and cards.",
+    "time": "60 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 10,
+    "phase": "Foundation",
+    "topic": "Animations",
+    "subtopic": [
+      "Keyframes",
+      "Timing",
+      "Animation"
+    ],
+    "task": "Build an animated landing section.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 11,
+    "phase": "Foundation",
+    "topic": "Landing Page",
+    "subtopic": [
+      "Hero",
+      "Features",
+      "CTA"
+    ],
+    "task": "Clone a SaaS landing page.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 12,
+    "phase": "Foundation",
+    "topic": "Portfolio",
+    "subtopic": [
+      "Sections",
+      "Layout",
+      "Typography"
+    ],
+    "task": "Build your portfolio homepage.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 13,
+    "phase": "Foundation",
+    "topic": "Mini Project",
+    "subtopic": [
+      "HTML",
+      "CSS",
+      "Responsive"
+    ],
+    "task": "Build a restaurant website.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 14,
+    "phase": "Foundation",
+    "topic": "Mini Project",
+    "subtopic": [
+      "Layout",
+      "Cards",
+      "Footer"
+    ],
+    "task": "Build a travel website.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 15,
+    "phase": "Foundation",
+    "topic": "Challenge",
+    "subtopic": [
+      "HTML",
+      "CSS",
+      "Responsive"
+    ],
+    "task": "Clone your favorite website homepage.",
+    "time": "180 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 16,
+    "phase": "JavaScript Fundamentals",
+    "topic": "JS Basics",
+    "subtopic": [
+      "Variables",
+      "Data Types",
+      "Operators"
+    ],
+    "task": "Practice 20 JavaScript exercises.",
+    "time": "75 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 17,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Functions",
+    "subtopic": [
+      "Declaration",
+      "Arrow",
+      "Return"
+    ],
+    "task": "Build a calculator.",
+    "time": "90 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 18,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Arrays",
+    "subtopic": [
+      "Methods",
+      "Iteration",
+      "Practice"
+    ],
+    "task": "Solve 10 array problems.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 19,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Objects",
+    "subtopic": [
+      "Properties",
+      "Methods",
+      "Destructuring"
+    ],
+    "task": "Create a student management object.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 20,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Control Flow",
+    "subtopic": [
+      "Loops",
+      "Conditionals",
+      "Switch"
+    ],
+    "task": "Generate number and star patterns.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 21,
+    "phase": "JavaScript Fundamentals",
+    "topic": "DOM",
+    "subtopic": [
+      "Selectors",
+      "Manipulation",
+      "Traversal"
+    ],
+    "task": "Change webpage content dynamically.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 22,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Events",
+    "subtopic": [
+      "Click",
+      "Input",
+      "Keyboard"
+    ],
+    "task": "Build an event playground.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 23,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Forms",
+    "subtopic": [
+      "Validation",
+      "Regex",
+      "Events"
+    ],
+    "task": "Implement client-side validation.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 24,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Project",
+    "subtopic": [
+      "DOM",
+      "Events"
+    ],
+    "task": "Build a digital clock.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 25,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Project",
+    "subtopic": [
+      "DOM",
+      "API"
+    ],
+    "task": "Build a quote generator.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 26,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Project",
+    "subtopic": [
+      "Colors",
+      "Clipboard"
+    ],
+    "task": "Build a color palette generator.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 27,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Project",
+    "subtopic": [
+      "DOM",
+      "Logic"
+    ],
+    "task": "Build a BMI calculator.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 28,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Project",
+    "subtopic": [
+      "CRUD",
+      "Local Storage"
+    ],
+    "task": "Build a To-Do app.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 29,
+    "phase": "JavaScript Fundamentals",
+    "topic": "ES6",
+    "subtopic": [
+      "Spread",
+      "Rest",
+      "Template Literals",
+      "Modules"
+    ],
+    "task": "Refactor previous projects using ES6.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 30,
+    "phase": "JavaScript Fundamentals",
+    "topic": "Mini Project",
+    "subtopic": [
+      "DOM",
+      "Storage"
+    ],
+    "task": "Build an Expense Tracker.",
+    "time": "150 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 31,
+    "phase": "React Fundamentals",
+    "topic": "Fetch API",
+    "subtopic": [
+      "HTTP",
+      "JSON",
+      "Fetch"
+    ],
+    "task": "Display users from an API.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 32,
+    "phase": "React Fundamentals",
+    "topic": "Async JS",
+    "subtopic": [
+      "Promises",
+      "Async/Await"
+    ],
+    "task": "Consume a public API.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 33,
+    "phase": "React Fundamentals",
+    "topic": "Weather App",
+    "subtopic": [
+      "API",
+      "Async"
+    ],
+    "task": "Build a weather application.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 34,
+    "phase": "React Fundamentals",
+    "topic": "Movie Search",
+    "subtopic": [
+      "API",
+      "Search"
+    ],
+    "task": "Build a movie search app.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 35,
+    "phase": "React Fundamentals",
+    "topic": "Git & GitHub",
+    "subtopic": [
+      "Commits",
+      "Branches",
+      "README"
+    ],
+    "task": "Push all projects to GitHub.",
+    "time": "60 mins",
+    "difficulty": "Beginner"
+  },
+  {
+    "day": 36,
+    "phase": "React Fundamentals",
+    "topic": "React Setup",
+    "subtopic": [
+      "Vite",
+      "Components"
+    ],
+    "task": "Create your first React app.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 37,
+    "phase": "React Fundamentals",
+    "topic": "JSX",
+    "subtopic": [
+      "Rendering",
+      "Components"
+    ],
+    "task": "Build reusable UI components.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 38,
+    "phase": "React Fundamentals",
+    "topic": "Props",
+    "subtopic": [
+      "Props",
+      "Composition"
+    ],
+    "task": "Build reusable product cards.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 39,
+    "phase": "React Fundamentals",
+    "topic": "State",
+    "subtopic": [
+      "useState",
+      "Events"
+    ],
+    "task": "Create a counter app.",
+    "time": "75 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 40,
+    "phase": "React Fundamentals",
+    "topic": "Hooks",
+    "subtopic": [
+      "useEffect",
+      "Lifecycle"
+    ],
+    "task": "Fetch data in React.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 41,
+    "phase": "React Fundamentals",
+    "topic": "Forms",
+    "subtopic": [
+      "Controlled Inputs",
+      "Validation"
+    ],
+    "task": "Build a login form.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 42,
+    "phase": "React Fundamentals",
+    "topic": "Routing",
+    "subtopic": [
+      "React Router",
+      "Navigation"
+    ],
+    "task": "Create a multi-page React app.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 43,
+    "phase": "React Fundamentals",
+    "topic": "API Integration",
+    "subtopic": [
+      "Fetch",
+      "Loading",
+      "Errors"
+    ],
+    "task": "Display products from FakeStore API.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 44,
+    "phase": "React Fundamentals",
+    "topic": "Custom Hooks",
+    "subtopic": [
+      "Reusability",
+      "Hooks"
+    ],
+    "task": "Create a reusable fetch hook.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 45,
+    "phase": "React Fundamentals",
+    "topic": "React Project",
+    "subtopic": [
+      "Components",
+      "Hooks",
+      "Storage"
+    ],
+    "task": "Build a Notes App.",
+    "time": "150 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 46,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Tailwind CSS",
+    "subtopic": [
+      "Utility Classes",
+      "Layout"
+    ],
+    "task": "Rebuild your portfolio using Tailwind CSS.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 47,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Dark Mode",
+    "subtopic": [
+      "Theme",
+      "Context"
+    ],
+    "task": "Implement dark/light mode.",
+    "time": "90 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 48,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "E-commerce UI",
+    "subtopic": [
+      "Cards",
+      "Grid",
+      "Filters"
+    ],
+    "task": "Build an e-commerce homepage.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 49,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Authentication UI",
+    "subtopic": [
+      "Login",
+      "Signup"
+    ],
+    "task": "Design authentication screens.",
+    "time": "120 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 50,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Dashboard",
+    "subtopic": [
+      "Sidebar",
+      "Charts",
+      "Widgets"
+    ],
+    "task": "Build an admin dashboard.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 51,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Kanban",
+    "subtopic": [
+      "Drag & Drop",
+      "State"
+    ],
+    "task": "Build a Kanban board.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 52,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Charts",
+    "subtopic": [
+      "Visualization",
+      "Libraries"
+    ],
+    "task": "Display analytics using charts.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 53,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Performance",
+    "subtopic": [
+      "Memoization",
+      "Optimization"
+    ],
+    "task": "Optimize React rendering.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 54,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Accessibility",
+    "subtopic": [
+      "ARIA",
+      "Keyboard",
+      "Contrast"
+    ],
+    "task": "Improve accessibility in previous projects.",
+    "time": "90 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 55,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Testing",
+    "subtopic": [
+      "Unit Tests",
+      "Components"
+    ],
+    "task": "Write tests for React components.",
+    "time": "120 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 56,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Deployment",
+    "subtopic": [
+      "Netlify",
+      "Vercel"
+    ],
+    "task": "Deploy your portfolio.",
+    "time": "60 mins",
+    "difficulty": "Intermediate"
+  },
+  {
+    "day": 57,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Capstone",
+    "subtopic": [
+      "Planning",
+      "Architecture"
+    ],
+    "task": "Start a full frontend application.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 58,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Capstone",
+    "subtopic": [
+      "Development",
+      "Features"
+    ],
+    "task": "Complete major features.",
+    "time": "240 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 59,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Polish",
+    "subtopic": [
+      "Bug Fixes",
+      "Responsive",
+      "Optimization"
+    ],
+    "task": "Polish and optimize the project.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  },
+  {
+    "day": 60,
+    "phase": "Advanced Frontend & Projects",
+    "topic": "Launch",
+    "subtopic": [
+      "Deployment",
+      "GitHub",
+      "LinkedIn"
+    ],
+    "task": "Deploy, document and showcase your capstone project.",
+    "time": "180 mins",
+    "difficulty": "Advanced"
+  }
+]
