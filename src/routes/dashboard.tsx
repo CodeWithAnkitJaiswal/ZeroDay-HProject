@@ -25,6 +25,7 @@ import { DASHBOARD_CHECKLIST, accentClasses, difficultyAccent, trackAccent } fro
 import { Confetti, Counter, EmptyState, Icon, Pill, ProgressRing } from "@/components/common";
 import { DayChecklist } from "@/components/DayChecklist";
 import { JourneyMap } from "@/components/JourneyMap";
+import { JourneyTracker } from "@/components/JourneyTracker";
 import { AchievementsGrid } from "@/components/AchievementsGrid";
 import { LeaderboardList } from "@/components/LeaderboardList";
 import { CodingTimeCard, ContributionCalendar, WeeklyCharts } from "@/components/DashboardCharts";
@@ -162,6 +163,18 @@ function Dashboard() {
         </motion.div>
 
         {/* profile card */}
+        <JourneyTracker
+          currentDay={day}
+          completedDays={state.completedDays}
+          avatar={state.profile.avatar || av(state.user.name)}
+          name={state.user.name}
+          track={track.name}
+          xp={xp}
+          level={level.name}
+          streak={state.longestStreak}
+          unlockedAchievements={unlockedAchievements}
+        />
+
         <div className="glass-strong relative overflow-hidden rounded-3xl p-5">
           <div className={cn("absolute inset-x-0 top-0 h-32 bg-gradient-to-b opacity-60", a.grad)} />
           <div className="relative">

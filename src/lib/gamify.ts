@@ -82,6 +82,8 @@ export const MILESTONES = [
   },
 ];
 
+export type Milestone = (typeof MILESTONES)[number];
+
 export type Achievement = {
   id: string;
   name: string;
