@@ -21,6 +21,8 @@ import {
   YAxis,
 } from "recharts";
 import { cn } from "@/lib/utils";
+import { computeTiming, hourLabel } from "@/lib/timing";
+import type { Submission } from "@/lib/store";
 
 const tooltipStyle = {
   background: "var(--popover)",
@@ -30,6 +32,13 @@ const tooltipStyle = {
   color: "var(--foreground)",
   boxShadow: "var(--shadow-soft)",
 };
+
+/** Recharts colours tooltip items by series fill, which is unreadable on dark. */
+const tooltipProps = {
+  contentStyle: tooltipStyle,
+  itemStyle: { color: "var(--foreground)" },
+  labelStyle: { color: "var(--foreground)", fontWeight: 600 },
+} as const;
 
 const PALETTE = [
   "var(--violet)",
@@ -126,7 +135,7 @@ export function WeeklyCharts({
               tick={{ fill: "var(--muted-foreground)", fontSize: 11 }}
             />
             <YAxis tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} width={38} />
-            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "var(--muted)", opacity: 0.35 }} />
+            <Tooltip {...tooltipProps} cursor={{ fill: "var(--muted)", opacity: 0.35 }} />
             <Bar dataKey="xp" radius={[10, 10, 4, 4]}>
               {weekly.map((d, i) => (
                 <Cell key={d.label} fill={PALETTE[i % PALETTE.length]} fillOpacity={d.xp ? 1 : 0.25} />
@@ -146,7 +155,7 @@ export function WeeklyCharts({
               wrapperStyle={{ fontSize: 11, color: "var(--muted-foreground)" }}
               formatter={(_, entry, i) => `${rings[i]?.name} · ${rings[i]?.value}%`}
             />
-            <Tooltip contentStyle={tooltipStyle} formatter={(v: number) => `${v}%`} />
+            <Tooltip {...tooltipProps} formatter={(v: number) => `${v}%`} />
           </RadialBarChart>
         </ResponsiveContainer>
       </Panel>
@@ -167,7 +176,7 @@ export function WeeklyCharts({
             <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
             <XAxis dataKey="week" tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 11 }} />
             <YAxis tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} width={38} />
-            <Tooltip contentStyle={tooltipStyle} />
+            <Tooltip {...tooltipProps} />
             <Legend iconType="circle" wrapperStyle={{ fontSize: 11, color: "var(--muted-foreground)" }} />
             <Area type="monotone" name="Target" dataKey="target" stroke="var(--cyan)" strokeWidth={2} fill="url(#targetFill)" />
             <Area type="monotone" name="Your XP" dataKey="xp" stroke="var(--violet)" strokeWidth={2.5} fill="url(#xpFill)" />
@@ -184,7 +193,7 @@ export function WeeklyCharts({
               ))}
             </Pie>
             <Legend iconType="circle" wrapperStyle={{ fontSize: 11, color: "var(--muted-foreground)" }} />
-            <Tooltip contentStyle={tooltipStyle} formatter={(v: number, n) => [`${v} days`, n as string]} />
+            <Tooltip {...tooltipProps} formatter={(v: number, n) => [`${v} days`, n as string]} />
           </PieChart>
         </ResponsiveContainer>
       </Panel>
@@ -202,7 +211,7 @@ export function WeeklyCharts({
             <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
             <XAxis dataKey="label" tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 11 }} />
             <YAxis tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} width={38} />
-            <Tooltip contentStyle={tooltipStyle} formatter={(v: number) => `${v} min`} />
+            <Tooltip {...tooltipProps} formatter={(v: number) => `${v} min`} />
             <Line
               type="monotone"
               name="Minutes"
@@ -274,6 +283,50 @@ export function ContributionCalendar({ completedDays, currentDay }: { completedD
         </span>
         <span className="ml-auto">Tap any day to open it</span>
       </div>
+    </div>
+  );
+}
+
+export function CodingTimeCard({ submissions }: { submissions: Submission[] }) {
+  const timing = useMemo(() => computeTiming(submissions), [submissions]);
+  const data = timing.buckets.map((b) => ({ ...b, name: b.label }));
+
+  return (
+    <div className="glass rounded-3xl p-4">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <p className="text-sm font-semibold">When you actually code</p>
+        <p className="text-[11px] text-muted-foreground">
+          {timing.total} submission{timing.total === 1 ? "" : "s"} analysed
+        </p>
+      </div>
+
+      <div className="flex items-center gap-3 rounded-2xl border border-violet/25 bg-violet/10 p-3">
+        <span className="text-2xl leading-none">{timing.emoji}</span>
+        <div className="min-w-0">
+          <p className="text-sm font-bold">{timing.title}</p>
+          <p className="text-xs text-muted-foreground">{timing.description}</p>
+        </div>
+        {timing.peakHour !== null && (
+          <div className="ml-auto shrink-0 rounded-xl bg-secondary/60 px-3 py-1.5 text-center">
+            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Peak</p>
+            <p className="text-sm font-bold tabular-nums">{hourLabel(timing.peakHour)}</p>
+          </div>
+        )}
+      </div>
+
+      <ResponsiveContainer width="100%" height={180}>
+        <BarChart data={data} margin={{ top: 14, right: 8, left: 0, bottom: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+          <XAxis dataKey="name" tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} />
+          <YAxis allowDecimals={false} tickLine={false} axisLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} width={28} />
+          <Tooltip {...tooltipProps} formatter={(v: number, _n, p) => [`${v} days`, (p?.payload as { hint?: string })?.hint ?? ""]} />
+          <Bar dataKey="value" radius={[10, 10, 4, 4]}>
+            {data.map((d, i) => (
+              <Cell key={d.label} fill={PALETTE[i % PALETTE.length]} fillOpacity={d.value ? 1 : 0.25} />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 }

@@ -34,6 +34,16 @@ export type Settings = {
   codingTime: string;
 };
 
+/** Per-track progress so switching tracks never mixes histories. */
+export type TrackProgress = {
+  currentDay: number;
+  completedDays: number[];
+  dailySubmissions: Record<number, Submission>;
+  checklists: Record<number, string[]>;
+  streak: number;
+  longestStreak: number;
+};
+
 export type AppState = {
   user: { id: string; name: string; email: string } | null;
   track: TrackId;
@@ -52,6 +62,7 @@ export type AppState = {
   loginDays: number;
   spinDate: string | null;
   spinReward: string | null;
+  trackProgress: Partial<Record<TrackId, TrackProgress>>;
 };
 
 const KEY = "abtalks.state.v1";
@@ -74,6 +85,7 @@ export const initialState: AppState = {
   loginDays: 0,
   spinDate: null,
   spinReward: null,
+  trackProgress: {},
 };
 
 const load = (): AppState => {
@@ -92,6 +104,7 @@ type Ctx = {
   hydrated: boolean;
   update: (patch: Partial<AppState> | ((s: AppState) => Partial<AppState>)) => void;
   reset: () => void;
+  switchTrack: (id: TrackId) => void;
   toggleCheck: (day: number, id: string) => void;
   submitDay: (s: Submission) => void;
   xp: number;
@@ -181,6 +194,34 @@ export function AppProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
+  const switchTrack = useCallback((id: TrackId) => {
+    setState((s) => {
+      if (s.track === id) return s;
+      const snapshot: TrackProgress = {
+        currentDay: s.currentDay,
+        completedDays: s.completedDays,
+        dailySubmissions: s.dailySubmissions,
+        checklists: s.checklists,
+        streak: s.streak,
+        longestStreak: s.longestStreak,
+      };
+      const target: TrackProgress = s.trackProgress[id] ?? {
+        currentDay: 1,
+        completedDays: [],
+        dailySubmissions: {},
+        checklists: {},
+        streak: 0,
+        longestStreak: 0,
+      };
+      return {
+        ...s,
+        track: id,
+        ...target,
+        trackProgress: { ...s.trackProgress, [s.track]: snapshot },
+      };
+    });
+  }, []);
+
   const submitDay = useCallback((sub: Submission) => {
     setState((s) => {
       const completed = s.completedDays.includes(sub.day) ? s.completedDays : [...s.completedDays, sub.day];
@@ -212,6 +253,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     hydrated,
     update,
     reset,
+    switchTrack,
     toggleCheck,
     submitDay,
     xp,

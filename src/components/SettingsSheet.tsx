@@ -14,7 +14,7 @@ import { accentClasses } from "@/lib/gamify";
 import { ACCENTS, useTheme, type ThemeMode } from "@/lib/theme";
 
 export function SettingsSheet() {
-  const { state, update, reset } = useApp();
+  const { state, update, reset, switchTrack } = useApp();
   const { mode, accent, setMode, setAccent } = useTheme();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -114,20 +114,31 @@ export function SettingsSheet() {
               {TRACKS.map((t) => {
                 const a = accentClasses[t.accent]!;
                 const active = state.track === t.id;
+                const saved = state.trackProgress[t.id as TrackId];
                 return (
                   <button
                     key={t.id}
-                    onClick={() => update({ track: t.id as TrackId })}
+                    onClick={() => switchTrack(t.id as TrackId)}
                     className={cn(
                       "rounded-xl border px-3 py-2 text-left text-xs font-semibold transition-all",
                       active ? cn(a.bg, a.border, a.text) : "border-border bg-secondary/40 text-muted-foreground",
                     )}
                   >
                     {t.name}
+                    <span className="mt-0.5 block text-[10px] font-medium text-muted-foreground">
+                      {active
+                        ? `Day ${state.currentDay}`
+                        : saved
+                          ? `Saved · Day ${saved.currentDay}`
+                          : "Starts at Day 1"}
+                    </span>
                   </button>
                 );
               })}
             </div>
+            <p className="text-[11px] text-muted-foreground">
+              Each track keeps its own days, streak and submissions. Switching never mixes histories.
+            </p>
           </div>
 
           <Separator />

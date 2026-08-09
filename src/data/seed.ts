@@ -12,6 +12,16 @@ const REFLECTIONS = [
   "Paired with a friend from the community, learnt two new tricks.",
 ];
 
+/** Each demo student codes at a different time of day (drives their persona). */
+const HOUR_PROFILES: Record<string, number[]> = {
+  s1: [22, 23, 23, 21, 23, 22, 23],
+  s2: [6, 5, 7, 6, 8, 6, 7],
+  s3: [19, 20, 18, 21, 19, 20, 18],
+  s4: [9, 10, 11, 9, 10, 8, 11],
+  s5: [23, 1, 0, 23, 2, 23, 1],
+  s6: [14, 15, 13, 16, 14, 15, 13],
+};
+
 const slug = (name: string) => name.split(" ")[0]?.toLowerCase() ?? "student";
 
 /**
@@ -36,12 +46,15 @@ export function buildDemoProgress(student: DemoStudent): {
     completedDays.push(d);
     const topic = track.days.find((x) => x.day === d)?.topic ?? `Day ${d}`;
     const daysAgo = student.currentDay - d;
+    const hours = HOUR_PROFILES[student.id] ?? [20, 21, 19, 22, 18, 20, 21];
+    const at = new Date(now - daysAgo * 86400000);
+    at.setHours(hours[d % hours.length] ?? 20, (d * 17) % 60, 0, 0);
     dailySubmissions[d] = {
       day: d,
       github: `https://github.com/${user}/60-days-${student.track}/tree/main/day-${String(d).padStart(2, "0")}`,
       linkedin: `https://linkedin.com/posts/${user}-dev_day${d}-60dayschallenge-abtalks`,
       notes: `${topic} — ${REFLECTIONS[d % REFLECTIONS.length]}`,
-      submittedAt: new Date(now - daysAgo * 86400000).toISOString(),
+      submittedAt: at.toISOString(),
     };
     checklists[d] = ["understand", "task", "test", "github", "linkedin", "reflect"];
   }

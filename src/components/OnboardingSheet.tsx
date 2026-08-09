@@ -49,6 +49,7 @@ export function OnboardingSheet({
       checklists: {},
       lastLogin: new Date().toDateString(),
       loginDays: 1,
+      trackProgress: {},
     });
     onOpenChange(false);
     void navigate({ to: "/dashboard" });
@@ -75,6 +76,7 @@ export function OnboardingSheet({
       lastLogin: new Date().toDateString(),
       loginDays: s.currentDay,
       streakFreeze: 1,
+      trackProgress: {},
     });
     onOpenChange(false);
     void navigate({ to: "/dashboard" });

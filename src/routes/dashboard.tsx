@@ -5,7 +5,9 @@ import { toast } from "sonner";
 import {
   ArrowRight,
   Bell,
+  CalendarDays,
   Clock,
+  Crown,
   Flame,
   Gift,
   Quote,
@@ -25,7 +27,9 @@ import { DayChecklist } from "@/components/DayChecklist";
 import { JourneyMap } from "@/components/JourneyMap";
 import { AchievementsGrid } from "@/components/AchievementsGrid";
 import { LeaderboardList } from "@/components/LeaderboardList";
-import { ContributionCalendar, WeeklyCharts } from "@/components/DashboardCharts";
+import { CodingTimeCard, ContributionCalendar, WeeklyCharts } from "@/components/DashboardCharts";
+import { GithubCommits } from "@/components/GithubCommits";
+import { ExportReport } from "@/components/ExportReport";
 import { ProfileModal } from "@/components/ProfileModal";
 import { SettingsSheet } from "@/components/SettingsSheet";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -121,6 +125,12 @@ function Dashboard() {
             <h1 className="truncate text-lg font-bold">{state.user.name.split(" ")[0]} 👋</h1>
           </div>
           <div className="flex shrink-0 items-center gap-2">
+            <span className="hidden lg:block">
+              <ExportReport />
+            </span>
+            <span className="lg:hidden">
+              <ExportReport compact />
+            </span>
             <ThemeToggle />
             <Button variant="glass" size="icon" aria-label="Notifications" onClick={() => toast("Streak warning: submit before midnight to keep your streak alive.")}>
               <Bell className="size-[18px]" />
@@ -180,18 +190,39 @@ function Dashboard() {
               </div>
             </div>
 
-            <div className="mt-5 grid grid-cols-3 gap-2 text-center sm:grid-cols-6">
+            <div className="mt-5 grid grid-cols-3 gap-2.5 sm:grid-cols-6">
               {[
-                { k: "Day", v: day },
-                { k: "Streak", v: state.streak },
-                { k: "Best", v: state.longestStreak },
-                { k: "XP", v: xp },
-                { k: "Level", v: level.level },
-                { k: "Rank", v: rank },
+                { k: "Day", v: day, icon: CalendarDays, accent: "violet", suffix: "/60" },
+                { k: "Streak", v: state.streak, icon: Flame, accent: "orange", suffix: "d" },
+                { k: "Best", v: state.longestStreak, icon: Crown, accent: "amber", suffix: "d" },
+                { k: "XP", v: xp, icon: Zap, accent: "emerald", suffix: "" },
+                { k: "Level", v: level.level, icon: Sparkles, accent: "blue", suffix: "" },
+                { k: "Rank", v: rank, icon: Trophy, accent: "rose", prefix: "#", suffix: "" },
               ].map((m) => (
-                <div key={m.k} className="rounded-2xl border border-border/60 bg-secondary/40 py-2.5">
-                  <Counter to={m.v} className="text-base font-bold tabular-nums" />
-                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{m.k}</p>
+                <div
+                  key={m.k}
+                  className={cn(
+                    "group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/35 p-2.5",
+                    "transition-all duration-300 hover:-translate-y-0.5 hover:border-border hover:bg-secondary/60",
+                  )}
+                >
+                  <span
+                    className="absolute inset-x-0 top-0 h-px opacity-70"
+                    style={{ background: `linear-gradient(90deg, transparent, var(--${m.accent}), transparent)` }}
+                  />
+                  <span
+                    className="pointer-events-none absolute -right-5 -top-6 size-14 rounded-full opacity-15 blur-xl transition-opacity duration-300 group-hover:opacity-35"
+                    style={{ background: `var(--${m.accent})` }}
+                  />
+                  <div className="relative flex items-center gap-1.5">
+                    <m.icon className="size-3.5 shrink-0" style={{ color: `var(--${m.accent})` }} />
+                    <p className="truncate text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{m.k}</p>
+                  </div>
+                  <div className="relative mt-1 flex items-baseline gap-0.5">
+                    {m.prefix && <span className="text-sm font-bold text-muted-foreground">{m.prefix}</span>}
+                    <Counter to={m.v} className="text-lg font-black leading-none tabular-nums" />
+                    {m.suffix && <span className="text-[10px] font-semibold text-muted-foreground">{m.suffix}</span>}
+                  </div>
                 </div>
               ))}
             </div>
@@ -345,6 +376,8 @@ function Dashboard() {
           </TabsList>
           <TabsContent value="stats" className="mt-4 space-y-4">
             <ContributionCalendar completedDays={state.completedDays} currentDay={day} />
+            <CodingTimeCard submissions={Object.values(state.dailySubmissions)} />
+            <GithubCommits />
             <WeeklyCharts completedDays={state.completedDays} currentDay={day} xp={xp} />
           </TabsContent>
           <TabsContent value="journey" className="mt-4">

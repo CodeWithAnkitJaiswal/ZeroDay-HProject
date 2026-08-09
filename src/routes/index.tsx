@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import {
   ArrowRight,
@@ -69,6 +69,13 @@ const BENEFITS = [
 function Landing() {
   const [open, setOpen] = useState(false);
   const { state } = useApp();
+  const navigate = useNavigate();
+
+  // Already signed in? Every CTA should continue the challenge, not re-onboard.
+  const startChallenge = () => {
+    if (state.user) void navigate({ to: "/dashboard" });
+    else setOpen(true);
+  };
 
   return (
     <div className="hero-bg relative min-h-screen pb-28">
@@ -122,8 +129,8 @@ function Landing() {
             transition={{ duration: 0.5, delay: 0.12 }}
             className="mt-7 flex flex-col gap-2.5 sm:flex-row sm:justify-center"
           >
-            <Button size="xl" variant="premium" className="w-full sm:w-auto" onClick={() => setOpen(true)}>
-              Start 60 Day Challenge <ArrowRight className="size-4" />
+            <Button size="xl" variant="premium" className="w-full sm:w-auto" onClick={startChallenge}>
+              {state.user ? "Continue your challenge" : "Start 60 Day Challenge"} <ArrowRight className="size-4" />
             </Button>
             <Button size="xl" variant="glass" className="w-full sm:w-auto" asChild>
               <a href="#tracks">View Tracks</a>
@@ -231,8 +238,8 @@ function Landing() {
                         </div>
                       ))}
                     </div>
-                    <Button variant="glass" className="mt-3 w-full" onClick={() => setOpen(true)}>
-                      Start {t.name} <ArrowRight className="size-4" />
+                    <Button variant="glass" className="mt-3 w-full" onClick={startChallenge}>
+                      {state.user ? `Go to ${t.name}` : `Start ${t.name}`} <ArrowRight className="size-4" />
                     </Button>
                   </div>
                 </motion.div>
@@ -365,8 +372,8 @@ function Landing() {
             <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
               No fees, no signup wall, no excuses. Just 60 days of showing up.
             </p>
-            <Button size="xl" variant="premium" className="mt-5 w-full sm:w-auto" onClick={() => setOpen(true)}>
-              Start 60 Day Challenge <ArrowRight className="size-4" />
+            <Button size="xl" variant="premium" className="mt-5 w-full sm:w-auto" onClick={startChallenge}>
+              {state.user ? "Continue your challenge" : "Start 60 Day Challenge"} <ArrowRight className="size-4" />
             </Button>
             <div className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-[11px] text-muted-foreground">
               {["100% free", "Beginner friendly", "Mobile first", "Certificate on Day 60"].map((x) => (
